@@ -1,4 +1,4 @@
-﻿namespace Palindrome.Algorithm
+﻿namespace Palindrome.Algorithm.V1
 {
     using System;
 

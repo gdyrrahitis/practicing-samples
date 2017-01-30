@@ -44,8 +44,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Unit\PalindromeTests\IsPalindrome.cs" />
+    <Compile Include="Unit\V1\PalindromeTests\IsPalindrome.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Unit\V2\IsPalindrome.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
