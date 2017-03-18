@@ -6,35 +6,33 @@
     {
         public IEnumerable<int> Sort(int[] v, Sort s = V2.Sort.Ascenting)
         {
-            for (int i = 0; i < v.Length; i++)
+            for (var i = 0; i < v.Length; i++)
             {
-                for (int j = i + 1; j < v.Length; j++)
+                for (var j = i + 1; j < v.Length; j++)
                 {
-                    if (s == V2.Sort.Ascenting) {
+                    if (s == V2.Sort.Ascenting)
+                    {
                         if (v[i] > v[j])
-                        {
-                            var temp = v[j];
-                            v[j] = v[i];
-                            v[i] = temp;
-                        }
+                            Swap(v, j, i);
                     }
                     else
-                    {
                         if (v[i] < v[j])
-                        {
-                            var temp = v[j];
-                            v[j] = v[i];
-                            v[i] = temp;
-                        }
-
-                    }
+                            Swap(v, j, i);
                 }
             }
             return v;
         }
+
+        private void Swap(IList<int> v, int i, int j)
+        {
+            var temp = v[i];
+            v[i] = v[j];
+            v[j] = temp;
+        }
     }
 
-    public enum Sort {
+    public enum Sort
+    {
         Ascenting, Descenting
     }
 }

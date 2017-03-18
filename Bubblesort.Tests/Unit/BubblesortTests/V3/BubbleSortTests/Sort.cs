@@ -1,0 +1,24 @@
+﻿namespace Bubblesort.Tests.Unit.BubblesortTests.V3.BubbleSortTests
+{
+    using Bubblesort.V3;
+    using NUnit.Framework;
+
+    [TestFixture]
+    public class Sort
+    {
+        [TestCase(new[] { 9, 1, 10 })]
+        [TestCase(new[] { -7, 5, 88, -9 })]
+        [TestCase(new[] { 555, -5, 11, 0, 99, 77, 33, 22, 66, 11, 88, 99, 44, 22, 55, 66 })]
+        public void ArraySuccessfully(int[] array)
+        {
+            // Arrange
+            var bubbleSort = new BubbleSort(array);
+
+            // Act
+            bubbleSort.Sort();
+
+            // Assert
+            CollectionAssert.IsOrdered(array);
+        }
+    }
+}

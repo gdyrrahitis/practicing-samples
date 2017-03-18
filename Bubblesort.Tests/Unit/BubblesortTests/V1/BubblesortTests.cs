@@ -3,6 +3,7 @@
     using System;
     using Bubblesort.V1;
     using NUnit.Framework;
+    using static NUnit.Framework.Assert;
 
     [TestFixture]
     public class BubblesortTests
@@ -14,7 +15,7 @@
             var instance = new Bubblesort();
 
             // Act | Assert
-            Assert.IsInstanceOf<Bubblesort>(instance);
+            IsInstanceOf<Bubblesort>(instance);
         }
 
         [Test]
@@ -24,7 +25,7 @@
             var bubblesort = new Bubblesort();
 
             // Act | Assert
-            Assert.Throws<ArgumentNullException>(() => bubblesort.Sort(null));
+            Throws<ArgumentNullException>(() => bubblesort.Sort(null));
         }
 
         [Test]
@@ -34,12 +35,12 @@
             var bubblesort = new Bubblesort();
 
             // Act | Assert
-            Assert.AreEqual(new[] { 1 }, bubblesort.Sort(new[] { 1 }));
-            Assert.AreEqual(new[] { 1, 2, 2, 3 }, bubblesort.Sort(new[] { 1, 2, 3, 2 }));
-            Assert.AreEqual(new[] { 1, 1, 2, 2, 3, 3 }, bubblesort.Sort(new[] { 1, 2, 3, 2, 3, 1 }));
-            Assert.AreEqual(new[] { 1, 1, 2, 2, 3, 3, 85 }, bubblesort.Sort(new[] { 1, 2, 3, 2, 3, 1, 85 }));
-            Assert.AreEqual(new[] { 1, 1, 2, 2, 3, 3, 8, 15, 22, 85 }, bubblesort.Sort(new[] { 1, 2, 3, 2, 3, 1, 85, 22, 15, 8 }));
-            Assert.AreEqual(new[] { 1, 1, 2, 2, 3, 3, 8, 15, 22, 24, 85 }, bubblesort.Sort(new[] { 1, 2, 3, 2, 3, 1, 85, 22, 15, 8, 24 }));
+            AreEqual(new[] { 1 }, bubblesort.Sort(new[] { 1 }));
+            AreEqual(new[] { 1, 2, 2, 3 }, bubblesort.Sort(new[] { 1, 2, 3, 2 }));
+            AreEqual(new[] { 1, 1, 2, 2, 3, 3 }, bubblesort.Sort(new[] { 1, 2, 3, 2, 3, 1 }));
+            AreEqual(new[] { 1, 1, 2, 2, 3, 3, 85 }, bubblesort.Sort(new[] { 1, 2, 3, 2, 3, 1, 85 }));
+            AreEqual(new[] { 1, 1, 2, 2, 3, 3, 8, 15, 22, 85 }, bubblesort.Sort(new[] { 1, 2, 3, 2, 3, 1, 85, 22, 15, 8 }));
+            AreEqual(new[] { 1, 1, 2, 2, 3, 3, 8, 15, 22, 24, 85 }, bubblesort.Sort(new[] { 1, 2, 3, 2, 3, 1, 85, 22, 15, 8, 24 }));
         }
 
         [Test]
@@ -49,10 +50,10 @@
             var bubblesort = new Bubblesort();
 
             // Act | Assert
-            Assert.AreEqual(new[] { 1 }, bubblesort.Sort(new[] { 1 }, Order.Desc));
-            Assert.AreEqual(new[] { 2, 1 }, bubblesort.Sort(new[] { 1, 2 }, Order.Desc));
-            Assert.AreEqual(new[] { 2, 1, 1 }, bubblesort.Sort(new[] { 1, 2, 1 }, Order.Desc));
-            Assert.AreEqual(new[] { 19, 12, 5, 4, 2, 1, 1 }, bubblesort.Sort(new[] { 1, 2, 1, 5, 19, 12, 4 }, Order.Desc));
+            AreEqual(new[] { 1 }, bubblesort.Sort(new[] { 1 }, Order.Desc));
+            AreEqual(new[] { 2, 1 }, bubblesort.Sort(new[] { 1, 2 }, Order.Desc));
+            AreEqual(new[] { 2, 1, 1 }, bubblesort.Sort(new[] { 1, 2, 1 }, Order.Desc));
+            AreEqual(new[] { 19, 12, 5, 4, 2, 1, 1 }, bubblesort.Sort(new[] { 1, 2, 1, 5, 19, 12, 4 }, Order.Desc));
         }
     }
 }

@@ -38,17 +38,17 @@
             return array;
         }
 
-        private static Func<int[], int, int, bool> AscendingOrder()
+        private Func<int[], int, int, bool> AscendingOrder()
         {
             return (a, i, j) => a[j] < a[i];
         }
 
-        private static Func<int[], int, int, bool> DescentingOrder()
+        private Func<int[], int, int, bool> DescentingOrder()
         {
             return (a, i, j) => a[j] > a[i];
         }
 
-        private static void Swap(IList<int> array, int current, int next)
+        private void Swap(IList<int> array, int current, int next)
         {
             var temp = array[next];
             array[next] = array[current];

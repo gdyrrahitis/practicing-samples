@@ -2,6 +2,7 @@
 {
     using Bubblesort.V2;
     using NUnit.Framework;
+    using static NUnit.Framework.Assert;
 
     [TestFixture]
     public class BubbleSortTests
@@ -13,12 +14,12 @@
             var sort = new Bubblesort();
 
             // Act | Assert
-            Assert.IsInstanceOf<Bubblesort>(sort);
-            Assert.AreEqual(new[] { 1 }, sort.Sort(new[] { 1 }));
-            Assert.AreEqual(new[] { 1, 2 }, sort.Sort(new[] { 1, 2 }));
-            Assert.AreEqual(new[] { 1, 1, 1, 2 }, sort.Sort(new[] { 1, 2, 1, 1 }));
-            Assert.AreEqual(new[] { 1, 1, 1, 2, 19 }, sort.Sort(new[] { 1, 2, 1, 1, 19 }));
-            Assert.AreEqual(new[] { 1, 1, 1, 2, 8, 19 }, sort.Sort(new[] { 1, 2, 1, 1, 19, 8 }));
+            IsInstanceOf<Bubblesort>(sort);
+            AreEqual(new[] { 1 }, sort.Sort(new[] { 1 }));
+            AreEqual(new[] { 1, 2 }, sort.Sort(new[] { 1, 2 }));
+            AreEqual(new[] { 1, 1, 1, 2 }, sort.Sort(new[] { 1, 2, 1, 1 }));
+            AreEqual(new[] { 1, 1, 1, 2, 19 }, sort.Sort(new[] { 1, 2, 1, 1, 19 }));
+            AreEqual(new[] { 1, 1, 1, 2, 8, 19 }, sort.Sort(new[] { 1, 2, 1, 1, 19, 8 }));
         }
 
         [Test]
@@ -28,12 +29,12 @@
             var sort = new Bubblesort();
 
             // Act | Assert
-            Assert.IsInstanceOf<Bubblesort>(sort);
-            Assert.AreEqual(new[] { 1 }, sort.Sort(new[] { 1 }, Sort.Descenting));
-            Assert.AreEqual(new[] { 2, 1}, sort.Sort(new[] { 1, 2 }, Sort.Descenting));
-            Assert.AreEqual(new[] {  2, 1, 1, 1 }, sort.Sort(new[] { 1, 2, 1, 1 }, Sort.Descenting));
-            Assert.AreEqual(new[] { 19, 2, 1, 1, 1 }, sort.Sort(new[] { 1, 2, 1, 1, 19 }, Sort.Descenting));
-            Assert.AreEqual(new[] { 19, 8, 2, 1, 1, 1 }, sort.Sort(new[] { 1, 2, 1, 1, 19, 8 }, Sort.Descenting));
+            IsInstanceOf<Bubblesort>(sort);
+            AreEqual(new[] { 1 }, sort.Sort(new[] { 1 }, Sort.Descenting));
+            AreEqual(new[] { 2, 1}, sort.Sort(new[] { 1, 2 }, Sort.Descenting));
+            AreEqual(new[] {  2, 1, 1, 1 }, sort.Sort(new[] { 1, 2, 1, 1 }, Sort.Descenting));
+            AreEqual(new[] { 19, 2, 1, 1, 1 }, sort.Sort(new[] { 1, 2, 1, 1, 19 }, Sort.Descenting));
+            AreEqual(new[] { 19, 8, 2, 1, 1, 1 }, sort.Sort(new[] { 1, 2, 1, 1, 19, 8 }, Sort.Descenting));
         }
     }
 }

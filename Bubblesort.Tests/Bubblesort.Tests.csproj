@@ -57,6 +57,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Unit\BubblesortTests\V1\BubblesortTests.cs" />
     <Compile Include="Unit\BubblesortTests\V2\BubbleSortTests.cs" />
+    <Compile Include="Unit\BubblesortTests\V3\BubbleSortTests\Sort.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Bubblesort\Bubblesort.csproj">
