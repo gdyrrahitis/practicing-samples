@@ -4,7 +4,7 @@ Repository contains various samples on design patterns with C#, data structures,
 
 Each has a test pair. Tests are written using the NUnit V3 testing framework.
 
-## Design Patterns included
+## Design Patterns
 ### Behavioral
 * Memento
 * Observer
