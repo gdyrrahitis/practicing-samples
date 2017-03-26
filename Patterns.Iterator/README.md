@@ -1,5 +1,6 @@
-# Design patterns
+# Iterator pattern
 
-## Structural patterns - Iterator pattern
-*Definition*
-Provide a way to access the elements of an aggregate object sequentially without exposing its underlying representation.
+This pattern belongs to Structural design patterns family.
+
+**Definition**
+>Provide a way to access the elements of an aggregate object sequentially without exposing its underlying representation.
