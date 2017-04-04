@@ -9,7 +9,7 @@ under the wraps to sort elements that are away (have significant gaps) from each
 ### Description of the algorithm
 Start from `h = 1` and implement the Knuth sequence (see below) to create a sequence of 1, 4, 13, 40, 121, 364,...
 Increase `h` using the Knuth's formula until `h > array.length / 3`.
-Then, as long as  `h > 0`, implement insertion sort on the array, going as far as `h`, decreasing `h` value after a successful sort of an individual subgroup.
+Then, as long as  `h > 0`, implement insertion sort on the array, going as far as `h` each time, decreasing `h` value after a successful sort of an individual subgroup.
 
 Note: Let's assume that 3 is the gap number.
 
