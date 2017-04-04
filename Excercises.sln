@@ -205,6 +205,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{32A4E9EF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.Iterator.Tests", "Patterns.Iterator.Tests\Patterns.Iterator.Tests.csproj", "{3F13248C-C4DE-43EE-9039-E1E70B538B4B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.Strategy.Tests", "Patterns.Strategy.Tests\Patterns.Strategy.Tests.csproj", "{33904CE6-05EB-469C-AD97-E1EEED7BFFCF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -399,6 +401,10 @@ Global
 		{3F13248C-C4DE-43EE-9039-E1E70B538B4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F13248C-C4DE-43EE-9039-E1E70B538B4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F13248C-C4DE-43EE-9039-E1E70B538B4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33904CE6-05EB-469C-AD97-E1EEED7BFFCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33904CE6-05EB-469C-AD97-E1EEED7BFFCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33904CE6-05EB-469C-AD97-E1EEED7BFFCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33904CE6-05EB-469C-AD97-E1EEED7BFFCF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -500,5 +506,6 @@ Global
 		{91C2B6CC-79B2-4F25-AF27-3096677D1BF9} = {3A2D2F21-BAFF-4E03-B05C-9DB04146D621}
 		{32A4E9EF-90B3-45EC-82CB-AA6DDCE0CAB9} = {3A2D2F21-BAFF-4E03-B05C-9DB04146D621}
 		{3F13248C-C4DE-43EE-9039-E1E70B538B4B} = {32A4E9EF-90B3-45EC-82CB-AA6DDCE0CAB9}
+		{33904CE6-05EB-469C-AD97-E1EEED7BFFCF} = {7063D1A6-45C4-4EBF-B9EE-EFE6329A3F23}
 	EndGlobalSection
 EndGlobal
