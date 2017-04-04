@@ -1,65 +1,61 @@
 ﻿namespace Algorithm.Shellsort.Tests.Unit.ShellsortTests
 {
     using NUnit.Framework;
-    using static NUnit.Framework.Assert;
+    using static NUnit.Framework.CollectionAssert;
 
     [TestFixture]
     public class Sort
     {
-        [Test]
-        public void DoesNotSortSingleElementArray()
+        [TestCase(new [] {1})]
+        public void DoesNotSortSingleElementArray(int[] array)
         {
             // Arrange
-            var array = new[] { 1 };
             var shellSort = new Shellsort(array);
 
             // Act
             shellSort.Sort();
 
             // Assert
-            AreEqual(new[] { 1 }, array);
+            IsOrdered(array);
         }
 
-        [Test]
-        public void SortsTwoElementsArray()
+        [TestCase(new[] { 10, 5 })]
+        public void SortsTwoElementsArray(int[] array)
         {
             // Arrange
-            var array = new[] { 10, 5 };
             var shellSort = new Shellsort(array);
 
             // Act
             shellSort.Sort();
 
             // Assert
-            AreEqual(new[] { 5, 10 }, array);
+            IsOrdered(array);
         }
 
-        [Test]
-        public void SortsThreeElementsArray()
+        [TestCase(new[] { 10, 5, 6 })]
+        public void SortsThreeElementsArray(int[] array)
         {
             // Arrange
-            var array = new[] { 10, 5, 6 };
             var shellSort = new Shellsort(array);
 
             // Act
             shellSort.Sort();
 
             // Assert
-            AreEqual(new[] { 5, 6, 10 }, array);
+            IsOrdered(array);
         }
 
-        [Test]
-        public void SortsArray()
+        [TestCase(new[] { 10, 5, 9, 77, 0, -8, 1, 10, 6 })]
+        public void SortsArray(int[] array)
         {
             // Arrange
-            var array = new[] { 10, 5, 9, 77, 0, -8, 1, 10, 6 };
             var shellSort = new Shellsort(array);
 
             // Act
             shellSort.Sort();
 
             // Assert
-            AreEqual(new[] { -8, 0, 1, 5, 6, 9, 10, 10, 77 }, array);
+            IsOrdered(array);
         }
     }
 }
