@@ -1,6 +1,6 @@
 # Shellsort
 
-Took its name from [https://en.wikipedia.org/wiki/Donald_Shell](Donald L. Shell) who proposed the algorithm back at 1959.
+Took its name from [Donald L. Shell](https://en.wikipedia.org/wiki/Donald_Shell) who proposed the algorithm back at 1959.
 It is based on insertion sort algorithm, though it adds one characteristic that improves the algorithm's overall performance.
 
 Algorithm is based on Knuth's sequence, which creates gaps between elements. This is the secret sauce of the algorithm, using insertion sort
