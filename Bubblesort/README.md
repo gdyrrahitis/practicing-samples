@@ -4,7 +4,7 @@ The simplest of the sorting algorithms.
 It's complexity is O(N^2) in the worst case scenario.
 Average number of comparisons in this algorithm is N/2
 
-In this algorithm, you compare the current element with the next in the array. If the current element is less than the next then you swap them.
+In this algorithm, you compare the current element with the next in the array. If the next element is less than current then you swap them.
 This continues until all elements in the array are ordered.
 
 Following example shows the bubblesort algorithm implementation, sorting an array in ascending order.
