@@ -8,10 +8,7 @@
     {
         private readonly Stack<ICommand> _commands = new Stack<ICommand>();
 
-        public void Push(ICommand command)
-        {
-            _commands.Push(command);
-        }
+        public void Push(ICommand command) => _commands.Push(command);
 
         public int Calculate() => _commands.Sum(command =>
         {
@@ -19,9 +16,6 @@
             return command.Number;
         });
 
-        public void Pop()
-        {
-            _commands.Pop();
-        }
+        public void Pop() => _commands.Pop();
     }
 }
