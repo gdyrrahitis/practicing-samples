@@ -11,14 +11,8 @@
 
         public int Number { get; private set; }
 
-        public void Do()
-        {
-            Number -= _number;
-        }
+        public void Do() => Number -= _number;
 
-        public void Undo()
-        {
-            Number += _number;
-        }
+        public void Undo() => Number += _number;
     }
 }
