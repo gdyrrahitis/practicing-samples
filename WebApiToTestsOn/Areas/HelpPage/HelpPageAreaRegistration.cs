@@ -3,6 +3,8 @@ using System.Web.Mvc;
 
 namespace WebApiToTestsOn.Areas.HelpPage
 {
+    using App_Start;
+
     public class HelpPageAreaRegistration : AreaRegistration
     {
         public override string AreaName

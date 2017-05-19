@@ -16,6 +16,8 @@ using WebApiToTestsOn.Areas.HelpPage.Models;
 
 namespace WebApiToTestsOn.Areas.HelpPage
 {
+    using SampleGeneration;
+
     public static class HelpPageConfigurationExtensions
     {
         private const string ApiModelPrefix = "MS_HelpPageApiModel_";

@@ -1,7 +1,7 @@
-using System;
-
-namespace WebApiToTestsOn.Areas.HelpPage
+namespace WebApiToTestsOn.Areas.HelpPage.SampleGeneration
 {
+    using System;
+
     /// <summary>
     /// This represents a preformatted text sample on the help page. There's a display template named TextSample associated with this class.
     /// </summary>

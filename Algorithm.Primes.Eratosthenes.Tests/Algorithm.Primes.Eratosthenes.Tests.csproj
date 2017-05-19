@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E0561AA4-85A5-47A8-BCC5-A8305C6E8DFE}</ProjectGuid>
+    <ProjectGuid>{8EDF4429-251A-416D-BB68-93F227191BCF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MergeSort.Tests</RootNamespace>
-    <AssemblyName>MergeSort.Tests</AssemblyName>
+    <RootNamespace>Algorithm.Primes.Eratosthenes.Tests</RootNamespace>
+    <AssemblyName>Algorithm.Primes.Eratosthenes.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -38,21 +38,23 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MergeSortTests\Sort.cs" />
+    <Compile Include="Unit\V1\SieveTests\Calculate.cs" />
+    <Compile Include="Unit\V2\SieveTests\Calculate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MergeSort\MergeSort.csproj">
-      <Project>{0e3d1b7c-bdce-40e1-975a-6914e9f86ceb}</Project>
-      <Name>MergeSort</Name>
+    <ProjectReference Include="..\Algorithm.Primes.Eratosthenes\Algorithm.Primes.Eratosthenes.csproj">
+      <Project>{8ffe18a6-31bb-46c7-9dea-ba872aaa9a5d}</Project>
+      <Name>Algorithm.Primes.Eratosthenes</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

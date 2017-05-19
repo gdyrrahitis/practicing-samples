@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eratosthenes.Algorithm.Tests", "Eratosthenes.Algorithm.Tests\Eratosthenes.Algorithm.Tests.csproj", "{8EDF4429-251A-416D-BB68-93F227191BCF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithm.Primes.Eratosthenes.Tests", "Algorithm.Primes.Eratosthenes.Tests\Algorithm.Primes.Eratosthenes.Tests.csproj", "{8EDF4429-251A-416D-BB68-93F227191BCF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eratosthenes.Algorithm", "Eratosthenes.Algorithm\Eratosthenes.Algorithm.csproj", "{8FFE18A6-31BB-46C7-9DEA-BA872AAA9A5D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithm.Primes.Eratosthenes", "Algorithm.Primes.Eratosthenes\Algorithm.Primes.Eratosthenes.csproj", "{8FFE18A6-31BB-46C7-9DEA-BA872AAA9A5D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Palindrome.Algorithm", "Palindrome.Algorithm\Palindrome.Algorithm.csproj", "{7EE4D07C-AB4F-4B45-921A-ABC370C54004}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithm.Palindrome", "Algorithm.Palindrome\Algorithm.Palindrome.csproj", "{7EE4D07C-AB4F-4B45-921A-ABC370C54004}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Palindrome.Algorithm.Tests", "Palindrome.Algorithm.Tests\Palindrome.Algorithm.Tests.csproj", "{393ADD74-E917-4F90-82D3-65120C0AB76B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithm.Palindrome.Tests", "Algorithm.Palindrome.Tests\Algorithm.Palindrome.Tests.csproj", "{393ADD74-E917-4F90-82D3-65120C0AB76B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiToTestsOn", "WebApiToTestsOn\WebApiToTestsOn.csproj", "{83BEA33A-4458-4856-9B80-1C8B3F5D31C6}"
 EndProject
@@ -59,9 +59,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pivot", "Pivot", "{DEBEBB71
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{ED532DE1-BA9E-4444-ACDF-8CE727A67AB8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pivot.Tests", "Pivot.Tests\Pivot.Tests.csproj", "{1021AE4E-2288-4503-B087-E591C1A03360}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithm.Pivot.Tests", "Algorithm.Pivot.Tests\Algorithm.Pivot.Tests.csproj", "{1021AE4E-2288-4503-B087-E591C1A03360}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pivot", "Pivot\Pivot.csproj", "{FE801DD8-7697-4CE9-9A37-C6270F348672}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithm.Pivot", "Algorithm.Pivot\Algorithm.Pivot.csproj", "{FE801DD8-7697-4CE9-9A37-C6270F348672}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SelectionSort", "SelectionSort", "{D6A0E424-F142-4729-9BE6-C14735290610}"
 EndProject
@@ -75,7 +75,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Primes", "Primes", "{2769A9
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{568D82B8-C1F2-4E55-8F3D-53F85EBB3BFC}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Palindrome", "Palindrome", "{3F833A6F-AF79-458D-A50C-B073629D67E7}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Algorithm.Palindrome", "Algorithm.Palindrome", "{3F833A6F-AF79-458D-A50C-B073629D67E7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{A047C4BC-A0F6-4800-89BC-642EAC675FAC}"
 EndProject
@@ -91,9 +91,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReverseInteger", "ReverseIn
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{77DE9060-1330-4AB5-966F-D3E956E2DD97}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseInteger", "ReverseInteger\ReverseInteger.csproj", "{343284CB-3738-4384-BF2E-319799250A70}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithm.ReverseInteger", "Algorithm.ReverseInteger\Algorithm.ReverseInteger.csproj", "{343284CB-3738-4384-BF2E-319799250A70}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseInteger.Tests", "ReverseInteger.Tests\ReverseInteger.Tests.csproj", "{5E8E3396-C001-46C2-9616-909F158A3D8A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithm.ReverseInteger.Tests", "Algorithm.ReverseInteger.Tests\Algorithm.ReverseInteger.Tests.csproj", "{5E8E3396-C001-46C2-9616-909F158A3D8A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Creational", "Creational", "{155C7ED4-FDD5-489C-9AEC-8FF7E58ECD07}"
 EndProject
