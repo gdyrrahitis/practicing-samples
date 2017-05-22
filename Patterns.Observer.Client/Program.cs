@@ -7,7 +7,7 @@ namespace Patterns.Observer.Client
     internal class Program
     {
         static void Main(string[] args)
-        {
+        { 
             var subscriber1 = new Subscriber();
             var subscriber2 = new Subscriber();
 

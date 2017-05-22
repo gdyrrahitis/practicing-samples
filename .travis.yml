@@ -1,0 +1,28 @@
+language: csharp
+solution: Exercises.sln
+script:
+	- xbuild /p:Configuration=Release Exercises.sln
+	- mono ./packages/NUnit.ConsoleRunner.*/tools/nunit3-console.exe ./Algorithm.Palindrome.Tests/bin/Release/Algorithm.Palindrome.Tests.dll
+	- mono ./packages/NUnit.ConsoleRunner.*/tools/nunit3-console.exe ./Algorithm.Pivot.Tests/bin/Release/Algorithm.Pivot.Tests.dll
+	- mono ./packages/NUnit.ConsoleRunner.*/tools/nunit3-console.exe ./Algorithm.Primes.Eratosthenes.Tests/bin/Release/Algorithm.Primes.Eratosthenes.Tests.dll
+	- mono ./packages/NUnit.ConsoleRunner.*/tools/nunit3-console.exe ./Algorithm.ReverseInteger.Tests/bin/Release/Algorithm.ReverseInteger.Tests.dll
+	- mono ./packages/NUnit.ConsoleRunner.*/tools/nunit3-console.exe ./Data.Structures.LinkedLists.Tests/bin/Release/Data.Structures.LinkedLists.Tests.dll
+	- mono ./packages/NUnit.ConsoleRunner.*/tools/nunit3-console.exe ./Data.Structures.Stack.Tests/bin/Release/Data.Structures.Stack.Tests.dll
+	- mono ./packages/NUnit.ConsoleRunner.*/tools/nunit3-console.exe ./Patterns.Adapter.Tests/bin/Release/Patterns.Adapter.Tests.dll
+	- mono ./packages/NUnit.ConsoleRunner.*/tools/nunit3-console.exe ./Patterns.Command.Tests/bin/Release/Patterns.Command.Tests.dll
+	- mono ./packages/NUnit.ConsoleRunner.*/tools/nunit3-console.exe ./Patterns.Decorator.Tests/bin/Release/Patterns.Decorator.Tests.dll
+	- mono ./packages/NUnit.ConsoleRunner.*/tools/nunit3-console.exe ./Patterns.Factory.Tests/bin/Release/Patterns.Factory.Tests.dll
+	- mono ./packages/NUnit.ConsoleRunner.*/tools/nunit3-console.exe ./Patterns.Iterator.Tests/bin/Release/Patterns.Iterator.Tests.dll
+	- mono ./packages/NUnit.ConsoleRunner.*/tools/nunit3-console.exe ./Patterns.Memento.Tests/bin/Release/Patterns.Memento.Tests.dll
+	- mono ./packages/NUnit.ConsoleRunner.*/tools/nunit3-console.exe ./Patterns.Observer.Tests/bin/Release/Patterns.Observer.Tests.dll
+	- mono ./packages/NUnit.ConsoleRunner.*/tools/nunit3-console.exe ./Patterns.Singleton.Tests/bin/Release/Patterns.Singleton.Tests.dll
+	- mono ./packages/NUnit.ConsoleRunner.*/tools/nunit3-console.exe ./Patterns.SpecialCase.Tests/bin/Release/Patterns.SpecialCase.Tests.dll
+	- mono ./packages/NUnit.ConsoleRunner.*/tools/nunit3-console.exe ./Patterns.Strategy.Tests/bin/Release/Patterns.Strategy.Tests.dll
+	- mono ./packages/NUnit.ConsoleRunner.*/tools/nunit3-console.exe ./Patterns.Visitor.Tests/bin/Release/Patterns.Visitor.Tests.dll
+	- mono ./packages/NUnit.ConsoleRunner.*/tools/nunit3-console.exe ./Sorting.Bubblesort.Tests/bin/Release/Sorting.Bubblesort.Tests.dll
+	- mono ./packages/NUnit.ConsoleRunner.*/tools/nunit3-console.exe ./Sorting.InsertionSort.Tests/bin/Release/Sorting.InsertionSort.Tests.dll
+	- mono ./packages/NUnit.ConsoleRunner.*/tools/nunit3-console.exe ./Sorting.MergeSort.Tests/bin/Release/Sorting.MergeSort.Tests.dll
+	- mono ./packages/NUnit.ConsoleRunner.*/tools/nunit3-console.exe ./Sorting.Quicksort.Tests/bin/Release/Sorting.Quicksort.Tests.dll
+	- mono ./packages/NUnit.ConsoleRunner.*/tools/nunit3-console.exe ./Sorting.SelectionSort.Tests/bin/Release/Sorting.SelectionSort.Tests.dll
+	- mono ./packages/NUnit.ConsoleRunner.*/tools/nunit3-console.exe ./Sorting.Shellsort.Tests/bin/Release/Sorting.Shellsort.Tests.dll
+	- mono ./packages/NUnit.ConsoleRunner.*/tools/nunit3-console.exe ./Web.Api.Samples.Tests/bin/Release/Web.Api.Samples.Tests.dll
