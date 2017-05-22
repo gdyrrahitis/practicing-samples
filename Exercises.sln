@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithm.Palindrome.Tests"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web.Api.Samples", "Web.Api.Samples\Web.Api.Samples.csproj", "{83BEA33A-4458-4856-9B80-1C8B3F5D31C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MementoConsoleApplication", "Patterns.Memento.Client\MementoConsoleApplication.csproj", "{520D45FB-525B-4086-892C-FBD5C14E0061}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.Memento.Client", "Patterns.Memento.Client\Patterns.Memento.Client.csproj", "{520D45FB-525B-4086-892C-FBD5C14E0061}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web.Api.Samples.Tests", "Web.Api.Samples.Tests\Web.Api.Samples.Tests.csproj", "{EE8F3459-D431-490F-B3D1-F84A335878AB}"
 EndProject
@@ -27,15 +27,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data.Structures", "Data.Str
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{ED95BF6E-9AE2-455F-A4FC-9CE6C2B44F9B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedLists.Tests", "Data.Structures.LinkedLists.Tests\LinkedLists.Tests.csproj", "{417F57E4-4C25-46E2-93E4-66E08508FEE4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.Structures.LinkedLists.Tests", "Data.Structures.LinkedLists.Tests\Data.Structures.LinkedLists.Tests.csproj", "{417F57E4-4C25-46E2-93E4-66E08508FEE4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedLists", "Data.Structures.LinkedLists\LinkedLists.csproj", "{05DAB2A1-057E-4310-AEA0-DDD36D5501D7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.Structures.LinkedLists", "Data.Structures.LinkedLists\Data.Structures.LinkedLists.csproj", "{05DAB2A1-057E-4310-AEA0-DDD36D5501D7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shellsort", "Shellsort", "{AC1F7B2B-54CC-4928-8551-ABF3C9102A78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithm.Shellsort", "Sorting.Shellsort\Algorithm.Shellsort.csproj", "{D6F7BF0E-B310-42C4-A348-56DC856C516A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sorting.Shellsort", "Sorting.Shellsort\Sorting.Shellsort.csproj", "{D6F7BF0E-B310-42C4-A348-56DC856C516A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithm.Shellsort.Tests", "Sorting.Shellsort.Tests\Algorithm.Shellsort.Tests.csproj", "{071C7EF2-49B7-4064-AC10-F06133FB3366}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sorting.Shellsort.Tests", "Sorting.Shellsort.Tests\Sorting.Shellsort.Tests.csproj", "{071C7EF2-49B7-4064-AC10-F06133FB3366}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{0905E2F1-64C7-42A3-B825-DDBD09232DED}"
 EndProject
@@ -67,9 +67,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SelectionSort", "SelectionS
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{0B0FF336-4A19-4D92-97FA-07F26597E2B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithm.SelectionSort.Tests", "Sorting.SelectionSort.Tests\Algorithm.SelectionSort.Tests.csproj", "{48F7F360-27AE-4C3C-85D0-57D20C49FE13}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sorting.SelectionSort.Tests", "Sorting.SelectionSort.Tests\Sorting.SelectionSort.Tests.csproj", "{48F7F360-27AE-4C3C-85D0-57D20C49FE13}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithm.SelectionSort", "Sorting.SelectionSort\Algorithm.SelectionSort.csproj", "{A472B64D-3BF5-4A4F-B3E0-79874E4543BA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sorting.SelectionSort", "Sorting.SelectionSort\Sorting.SelectionSort.csproj", "{A472B64D-3BF5-4A4F-B3E0-79874E4543BA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Primes", "Primes", "{2769A9CF-8E98-4944-B7A6-3A0FB6FDFDD5}"
 EndProject
@@ -101,75 +101,75 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Singleton", "Singleton", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{F92190A4-DE62-49FD-9E46-9FBFE56351F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton", "Patterns.Singleton\Singleton.csproj", "{7B01A10B-D765-46D5-8C67-9662B40F0F7F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.Singleton", "Patterns.Singleton\Patterns.Singleton.csproj", "{7B01A10B-D765-46D5-8C67-9662B40F0F7F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton.Tests", "Patterns.Singleton.Tests\Singleton.Tests.csproj", "{C5B185CE-3757-4EBE-B944-EF4AA876FFAC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.Singleton.Tests", "Patterns.Singleton.Tests\Patterns.Singleton.Tests.csproj", "{C5B185CE-3757-4EBE-B944-EF4AA876FFAC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Factory", "Factory", "{D5C3E215-686A-4171-9E87-248BC8836B8B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{365825E5-43CF-4E7C-87B5-69C592BB0C5E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factory", "Patterns.Factory\Factory.csproj", "{0B1B2132-1300-4EDA-9982-F0C76E04E1C9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.Factory", "Patterns.Factory\Patterns.Factory.csproj", "{0B1B2132-1300-4EDA-9982-F0C76E04E1C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factory.Tests", "Patterns.Factory.Tests\Factory.Tests.csproj", "{90916D36-D213-4AE3-8BB4-CFD023FC1569}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.Factory.Tests", "Patterns.Factory.Tests\Patterns.Factory.Tests.csproj", "{90916D36-D213-4AE3-8BB4-CFD023FC1569}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BubbleSort", "BubbleSort", "{757B3872-EC61-4474-A3D6-DD2E1F569A34}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{0E44335C-AB32-4DC2-B028-C879D52E171C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bubblesort", "Sorting.Bubblesort\Bubblesort.csproj", "{717A26FD-F7F8-417B-95D9-1A3008DAB2E8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sorting.Bubblesort", "Sorting.Bubblesort\Sorting.Bubblesort.csproj", "{717A26FD-F7F8-417B-95D9-1A3008DAB2E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bubblesort.Tests", "Sorting.Bubblesort.Tests\Bubblesort.Tests.csproj", "{BF0D79EE-773E-437F-AD1F-B9FD9BB180C9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sorting.Bubblesort.Tests", "Sorting.Bubblesort.Tests\Sorting.Bubblesort.Tests.csproj", "{BF0D79EE-773E-437F-AD1F-B9FD9BB180C9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Stack", "Stack", "{7D4F643C-E1FE-4358-B64A-D3D8F9C3C07B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{5AE53B5D-7836-4D47-9FB1-C9E371894B4F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stack.Tests", "Data.Structures.Stack.Tests\Stack.Tests.csproj", "{49A3F64D-58A8-4B4A-894A-ACFED9317B21}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.Structures.Stack.Tests", "Data.Structures.Stack.Tests\Data.Structures.Stack.Tests.csproj", "{49A3F64D-58A8-4B4A-894A-ACFED9317B21}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stack", "Data.Structures.Stack\Stack.csproj", "{C0EF0607-F743-4E15-8507-F8FC0999D9C7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.Structures.Stack", "Data.Structures.Stack\Data.Structures.Stack.csproj", "{C0EF0607-F743-4E15-8507-F8FC0999D9C7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SpecialCasePattern", "SpecialCasePattern", "{BA0EE1F3-A8D7-429E-8414-196C0C209F30}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecialCase", "Patterns.SpecialCase\SpecialCase.csproj", "{833EDA81-C661-4000-A2E1-E23C487277F7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.SpecialCase", "Patterns.SpecialCase\Patterns.SpecialCase.csproj", "{833EDA81-C661-4000-A2E1-E23C487277F7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{9579ABDA-F0E6-4BBF-AD55-BCB96BDBE97A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecialCase.Tests", "Patterns.SpecialCase.Tests\SpecialCase.Tests.csproj", "{221A29D5-7EFC-4706-ADF7-0AE48C3ECF55}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.SpecialCase.Tests", "Patterns.SpecialCase.Tests\Patterns.SpecialCase.Tests.csproj", "{221A29D5-7EFC-4706-ADF7-0AE48C3ECF55}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visitor", "Patterns.Visitor\Visitor.csproj", "{01B126D0-AA8B-460D-B570-1A75F1A51201}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.Visitor", "Patterns.Visitor\Patterns.Visitor.csproj", "{01B126D0-AA8B-460D-B570-1A75F1A51201}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visitor.Tests", "Patterns.Visitor.Tests\Visitor.Tests.csproj", "{0D00FCBD-7EF0-4608-A3CF-997B082633D2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.Visitor.Tests", "Patterns.Visitor.Tests\Patterns.Visitor.Tests.csproj", "{0D00FCBD-7EF0-4608-A3CF-997B082633D2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Quicksort", "Quicksort", "{247AE950-F915-4B85-AAFD-DFF4055A5CBD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{8F01AA30-527E-4D7A-8937-AEEA83650C39}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithm.Quicksort", "Sorting.Quicksort\Algorithm.Quicksort.csproj", "{A5A38B1E-20F0-43D6-A66C-FAFF79264C5A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sorting.Quicksort", "Sorting.Quicksort\Sorting.Quicksort.csproj", "{A5A38B1E-20F0-43D6-A66C-FAFF79264C5A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithm.Quicksort.Tests", "Sorting.Quicksort.Tests\Algorithm.Quicksort.Tests.csproj", "{CA2EE662-B010-45BA-AF11-A14BC8448AF3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sorting.Quicksort.Tests", "Sorting.Quicksort.Tests\Sorting.Quicksort.Tests.csproj", "{CA2EE662-B010-45BA-AF11-A14BC8448AF3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Observer.Tests", "Patterns.Observer.Tests\Observer.Tests.csproj", "{00FB2B12-6038-4467-A5E4-C2B862C59399}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.Observer.Tests", "Patterns.Observer.Tests\Patterns.Observer.Tests.csproj", "{00FB2B12-6038-4467-A5E4-C2B862C59399}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Observer", "Patterns.Observer\Observer.csproj", "{C597B316-B90C-43C4-B9C7-EB5C89D905C4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.Observer", "Patterns.Observer\Patterns.Observer.csproj", "{C597B316-B90C-43C4-B9C7-EB5C89D905C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memento.Tests", "Patterns.Memento.Tests\Memento.Tests.csproj", "{52C49AA0-FEBB-4C36-88C6-12729ABF58CD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.Memento.Tests", "Patterns.Memento.Tests\Patterns.Memento.Tests.csproj", "{52C49AA0-FEBB-4C36-88C6-12729ABF58CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memento", "Patterns.Memento\Memento.csproj", "{BF5E0D0A-9FF4-4079-B40A-160A326B634C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.Memento", "Patterns.Memento\Patterns.Memento.csproj", "{BF5E0D0A-9FF4-4079-B40A-160A326B634C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{B0867E79-474D-47EC-B6F6-3BCB91477856}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adapter.Tests", "Patterns.Adapter.Tests\Adapter.Tests.csproj", "{86D707A7-6360-4BE2-9F9A-276066BB0D47}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.Adapter.Tests", "Patterns.Adapter.Tests\Patterns.Adapter.Tests.csproj", "{86D707A7-6360-4BE2-9F9A-276066BB0D47}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adapter", "Patterns.Adapter\Adapter.csproj", "{3FE19E0B-4A89-4632-A657-AAC154A1D53E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.Adapter", "Patterns.Adapter\Patterns.Adapter.csproj", "{3FE19E0B-4A89-4632-A657-AAC154A1D53E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MergeSort", "MergeSort", "{90C4917B-FFC4-4BB3-8DC1-46C0C723721D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{413EC6E9-A426-4F9A-BECB-6DAC215A05A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeSort", "Sorting.MergeSort\MergeSort.csproj", "{0E3D1B7C-BDCE-40E1-975A-6914E9F86CEB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sorting.MergeSort", "Sorting.MergeSort\Sorting.MergeSort.csproj", "{0E3D1B7C-BDCE-40E1-975A-6914E9F86CEB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeSort.Tests", "Sorting.MergeSort.Tests\MergeSort.Tests.csproj", "{E0561AA4-85A5-47A8-BCC5-A8305C6E8DFE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sorting.MergeSort.Tests", "Sorting.MergeSort.Tests\Sorting.MergeSort.Tests.csproj", "{E0561AA4-85A5-47A8-BCC5-A8305C6E8DFE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Strategy", "Strategy", "{14DA1CF2-C87B-41C7-8266-6AFB49201ADA}"
 EndProject
@@ -179,15 +179,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Decorator", "Decorator", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{F88024F9-1EEF-49A2-93E8-79ADB658CD5F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decorator.Tests", "Patterns.Decorator.Tests\Decorator.Tests.csproj", "{F6EE6D01-7126-41A4-BA5E-5B46799B9596}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.Decorator.Tests", "Patterns.Decorator.Tests\Patterns.Decorator.Tests.csproj", "{F6EE6D01-7126-41A4-BA5E-5B46799B9596}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decorator", "Patterns.Decorator\Decorator.csproj", "{8827F11D-BF4D-456B-BB8C-6F3A4F1C56EA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.Decorator", "Patterns.Decorator\Patterns.Decorator.csproj", "{8827F11D-BF4D-456B-BB8C-6F3A4F1C56EA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.Strategy", "Patterns.Strategy\Patterns.Strategy.csproj", "{85FEB2A5-14DA-4320-A091-78D7BEE90D5D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bridge", "Bridge", "{6AF7C1C8-D8BD-4BED-9AC0-494C97EB45CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bridge", "Patterns.Bridge\Bridge.csproj", "{D0A330AB-3629-46D2-B204-4248BDDABB33}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.Bridge", "Patterns.Bridge\Patterns.Bridge.csproj", "{D0A330AB-3629-46D2-B204-4248BDDABB33}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InsertionSort", "InsertionSort", "{C1887C6D-0465-4EFE-90CA-B9422CBE53EC}"
 EndProject

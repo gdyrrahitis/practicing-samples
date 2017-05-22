@@ -51,9 +51,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Patterns.Observer\Observer.csproj">
+    <ProjectReference Include="..\Patterns.Observer\Patterns.Observer.csproj">
       <Project>{C597B316-B90C-43C4-B9C7-EB5C89D905C4}</Project>
-      <Name>Observer</Name>
+      <Name>Patterns.Observer</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
