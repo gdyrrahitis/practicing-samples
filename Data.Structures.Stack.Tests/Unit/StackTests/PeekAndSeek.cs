@@ -18,7 +18,7 @@
             Assert.AreEqual(1, stack.Size);
             Assert.AreEqual(5, stack.PushAndPeek(5));
             Assert.AreEqual(2, stack.Size);
-            Throws<Exception>(() => stack.PushAndPeek(9), "Stack is full, cannot push.");
+            Assert.Throws<Exception>(() => stack.PushAndPeek(9), "Stack is full, cannot push.");
         }
     }
 }

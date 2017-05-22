@@ -38,7 +38,14 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MementoTests\State.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShapeBagTests\AddShape.cs" />
+    <Compile Include="ShapeBagTests\CreateMemento.cs" />
+    <Compile Include="ShapeBagTests\GetShape.cs" />
+    <Compile Include="ShapeBagTests\GetShapes.cs" />
+    <Compile Include="ShapeBagTests\RemoveShape.cs" />
+    <Compile Include="ShapeBagTests\RestoreMemento.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

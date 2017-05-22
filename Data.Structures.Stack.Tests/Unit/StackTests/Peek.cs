@@ -13,7 +13,7 @@
             var stack = new Stack();
 
             // Act | Assert
-            Throws<Exception>(() => stack.Peek(), "Empty stack");
+            Assert.Throws<Exception>(() => stack.Peek(), "Empty stack");
         }
     }
 }

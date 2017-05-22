@@ -3,11 +3,11 @@
     using System;
     using Patterns.Memento;
 
-    class Program
+    internal class Program
     {
         private static Memento _memento;
 
-        static void Main(string[] args)
+        internal static void Main(string[] args)
         {
             var bag = new ShapeBag();
             while (true)
@@ -18,32 +18,31 @@
                 {
                     break;
                 }
-                else if (input == 1)
+
+                switch (input)
                 {
-                    bag.AddShape($"rectangle{Guid.NewGuid()}", new Rectangle());
-                    Console.WriteLine("Saved rectangle");
-                }
-                else if (input == 2)
-                {
-                    bag.AddShape($"triangle{Guid.NewGuid()}", new Triangle());
-                    Console.WriteLine("Saved triangle");
-                }
-                else if (input == 3)
-                {
-                    _memento = bag.CreateMemento();
-                    Console.WriteLine("Created checkpoint");
-                }
-                else if (input == 4)
-                {
-                    bag.RestoreMemento(_memento);
-                    Console.WriteLine("Restored checkpoint");
-                }
-                else if (input == 5)
-                {
-                    foreach (var item in bag.GetShapes())
-                    {
-                        Console.WriteLine($"{item.Key} is {item.Value.GetType().Name}");
-                    }
+                    case 1:
+                        bag.AddShape($"rectangle{Guid.NewGuid()}", new Rectangle());
+                        Console.WriteLine("Saved rectangle");
+                        break;
+                    case 2:
+                        bag.AddShape($"triangle{Guid.NewGuid()}", new Triangle());
+                        Console.WriteLine("Saved triangle");
+                        break;
+                    case 3:
+                        _memento = bag.CreateMemento();
+                        Console.WriteLine("Created checkpoint");
+                        break;
+                    case 4:
+                        bag.RestoreMemento(_memento);
+                        Console.WriteLine("Restored checkpoint");
+                        break;
+                    case 5:
+                        foreach (var item in bag.GetShapes())
+                        {
+                            Console.WriteLine($"{item.Key} is {item.Value.GetType().Name}");
+                        }
+                        break;
                 }
 
                 Console.ReadLine();

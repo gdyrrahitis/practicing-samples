@@ -17,7 +17,6 @@ script:
   - mono ./packages/NUnit.ConsoleRunner.*/tools/nunit3-console.exe ./Patterns.Observer.Tests/bin/Release/Patterns.Observer.Tests.dll
   - mono ./packages/NUnit.ConsoleRunner.*/tools/nunit3-console.exe ./Patterns.Singleton.Tests/bin/Release/Patterns.Singleton.Tests.dll
   - mono ./packages/NUnit.ConsoleRunner.*/tools/nunit3-console.exe ./Patterns.SpecialCase.Tests/bin/Release/Patterns.SpecialCase.Tests.dll
-  - mono ./packages/NUnit.ConsoleRunner.*/tools/nunit3-console.exe ./Patterns.Strategy.Tests/bin/Release/Patterns.Strategy.Tests.dll
   - mono ./packages/NUnit.ConsoleRunner.*/tools/nunit3-console.exe ./Patterns.Visitor.Tests/bin/Release/Patterns.Visitor.Tests.dll
   - mono ./packages/NUnit.ConsoleRunner.*/tools/nunit3-console.exe ./Sorting.Bubblesort.Tests/bin/Release/Sorting.Bubblesort.Tests.dll
   - mono ./packages/NUnit.ConsoleRunner.*/tools/nunit3-console.exe ./Sorting.InsertionSort.Tests/bin/Release/Sorting.InsertionSort.Tests.dll

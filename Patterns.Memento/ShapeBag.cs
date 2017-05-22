@@ -11,37 +11,19 @@
             _shapes = new Dictionary<string, Shape>();
         }
 
-        public void AddShape(string name, Shape shape)
-        {
-            _shapes.Add(name, shape);
-        }
+        public void AddShape(string name, Shape shape) => _shapes.Add(name, shape);
 
-        public IDictionary<string, Shape> GetShapes()
-        {
-            return _shapes;
-        }
+        public IDictionary<string, Shape> GetShapes() => _shapes;
 
-        public Shape GetShape(string name)
-        {
-            return _shapes[name];
-        }
+        public Shape GetShape(string name) => _shapes[name];
 
-        public void RemoveShape(string name)
-        {
-            _shapes.Remove(name);
-        }
+        public void RemoveShape(string name) => _shapes.Remove(name);
 
-        public Memento CreateMemento()
+        public Memento CreateMemento() => new Memento
         {
-            return new Memento
-            {
-                State = _shapes
-            };
-        }
+            State = _shapes
+        };
 
-        public void RestoreMemento(Memento memento)
-        {
-            _shapes = memento.State;
-        }
+        public void RestoreMemento(Memento memento) => _shapes = memento.State;
     }
 }
