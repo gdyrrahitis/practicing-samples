@@ -11,11 +11,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithm.Palindrome", "Alg
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithm.Palindrome.Tests", "Algorithm.Palindrome.Tests\Algorithm.Palindrome.Tests.csproj", "{393ADD74-E917-4F90-82D3-65120C0AB76B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiToTestsOn", "Web.Api.Samples\WebApiToTestsOn.csproj", "{83BEA33A-4458-4856-9B80-1C8B3F5D31C6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web.Api.Samples", "Web.Api.Samples\Web.Api.Samples.csproj", "{83BEA33A-4458-4856-9B80-1C8B3F5D31C6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MementoConsoleApplication", "Patterns.Memento.Client\MementoConsoleApplication.csproj", "{520D45FB-525B-4086-892C-FBD5C14E0061}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiToTestsOn.Tests", "Web.Api.Samples.Tests\WebApiToTestsOn.Tests.csproj", "{EE8F3459-D431-490F-B3D1-F84A335878AB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web.Api.Samples.Tests", "Web.Api.Samples.Tests\Web.Api.Samples.Tests.csproj", "{EE8F3459-D431-490F-B3D1-F84A335878AB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Patterns", "Patterns", "{8F39549C-20D6-417D-AF16-A0D4EEC1D0F1}"
 EndProject

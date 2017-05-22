@@ -7,8 +7,8 @@
     <ProjectGuid>{EE8F3459-D431-490F-B3D1-F84A335878AB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WebApiToTestsOn.Tests</RootNamespace>
-    <AssemblyName>WebApiToTestsOn.Tests</AssemblyName>
+    <RootNamespace>Web.Api.Samples</RootNamespace>
+    <AssemblyName>Web.Api.Samples.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -61,9 +61,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Web.Api.Samples\WebApiToTestsOn.csproj">
+    <ProjectReference Include="..\Web.Api.Samples\Web.Api.Samples.csproj">
       <Project>{83bea33a-4458-4856-9b80-1c8b3f5d31c6}</Project>
-      <Name>WebApiToTestsOn</Name>
+      <Name>Web.Api.Samples</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
