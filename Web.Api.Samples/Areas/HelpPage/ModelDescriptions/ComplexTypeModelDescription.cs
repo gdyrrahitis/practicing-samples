@@ -1,7 +1,7 @@
-using System.Collections.ObjectModel;
-
-namespace WebApiToTestsOn.Areas.HelpPage.ModelDescriptions
+namespace Web.Api.Samples.Areas.HelpPage.ModelDescriptions
 {
+    using System.Collections.ObjectModel;
+
     public class ComplexTypeModelDescription : ModelDescription
     {
         public ComplexTypeModelDescription()

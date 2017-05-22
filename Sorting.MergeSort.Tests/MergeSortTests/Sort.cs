@@ -1,4 +1,4 @@
-﻿namespace MergeSort.Tests.MergeSortTests
+﻿namespace Sorting.MergeSort.Tests.MergeSortTests
 {
     using NUnit.Framework;
 

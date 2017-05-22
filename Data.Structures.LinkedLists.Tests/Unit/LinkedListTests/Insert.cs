@@ -1,7 +1,6 @@
-﻿namespace LinkedLists.Tests.Unit.LinkedListTests
+﻿namespace Data.Structures.LinkedLists.Tests.Unit.LinkedListTests
 {
     using NUnit.Framework;
-    using static NUnit.Framework.Assert;
 
     [TestFixture]
     public class Insert
@@ -21,7 +20,7 @@
             var result = new LinkedList();
 
             // Assert
-            IsNull(result.First);
+            Assert.IsNull(result.First);
         }
 
         [Test]
@@ -38,7 +37,7 @@
         {
             var iterator = _list.GetIterator();
             iterator.MoveNext();
-            AreEqual(value, iterator.Current.Value);
+            Assert.AreEqual(value, iterator.Current.Value);
         }
 
         [Test]
@@ -49,9 +48,9 @@
             _list.Insert(20);
 
             // Assert
-            AreEqual(20, _list.First.Value);
-            IsNotNull(_list.First.Next);
-            AreEqual(15, _list.First.Next.Value);
+            Assert.AreEqual(20, _list.First.Value);
+            Assert.IsNotNull(_list.First.Next);
+            Assert.AreEqual(15, _list.First.Next.Value);
         }
 
         [Test]
@@ -63,9 +62,9 @@
             _list.Insert(6);
 
             // Assert
-            AreEqual(6, _list.First.Value);
-            AreEqual(20, _list.First.Next.Value);
-            AreEqual(15, _list.First.Next.Next.Value);
+            Assert.AreEqual(6, _list.First.Value);
+            Assert.AreEqual(20, _list.First.Next.Value);
+            Assert.AreEqual(15, _list.First.Next.Next.Value);
         }
     }
 }

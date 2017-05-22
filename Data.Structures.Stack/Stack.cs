@@ -1,4 +1,4 @@
-﻿namespace Stack
+﻿namespace Data.Structures.Stack
 {
     using System;
 

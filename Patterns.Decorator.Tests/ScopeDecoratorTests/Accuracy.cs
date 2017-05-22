@@ -1,7 +1,6 @@
-﻿namespace Decorator.Tests.ScopeDecoratorTests
+﻿namespace Patterns.Decorator.Tests.ScopeDecoratorTests
 {
     using NUnit.Framework;
-    using static NUnit.Framework.Assert;
 
     [TestFixture]
     public class Accuracy
@@ -18,10 +17,10 @@
             var result = decorator.Accuracy;
 
             // Assert
-            That(initialAccuracy, Is.EqualTo(65));
-            That(result, Is.EqualTo(90));
-            That(decorator.Damage, Is.EqualTo(rifle.Damage));
-            That(decorator.Recoil, Is.EqualTo(rifle.Recoil));
+            Assert.That(initialAccuracy, Is.EqualTo(65));
+            Assert.That(result, Is.EqualTo(90));
+            Assert.That(decorator.Damage, Is.EqualTo(rifle.Damage));
+            Assert.That(decorator.Recoil, Is.EqualTo(rifle.Recoil));
         }
     }
 }

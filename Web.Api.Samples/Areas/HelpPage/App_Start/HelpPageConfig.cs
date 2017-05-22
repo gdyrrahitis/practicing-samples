@@ -7,7 +7,7 @@
 using System.Web.Http.OData;
 #endif
 
-namespace WebApiToTestsOn.Areas.HelpPage.App_Start
+namespace Web.Api.Samples.Areas.HelpPage.App_Start
 {
     using System.Diagnostics.CodeAnalysis;
     using System.Net.Http.Headers;

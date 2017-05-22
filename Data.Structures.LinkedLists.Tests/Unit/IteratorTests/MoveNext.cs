@@ -1,8 +1,7 @@
-﻿namespace LinkedLists.Tests.Unit.IteratorTests
+﻿namespace Data.Structures.LinkedLists.Tests.Unit.IteratorTests
 {
     using Moq;
     using NUnit.Framework;
-    using static NUnit.Framework.Assert;
 
     [TestFixture]
     public class MoveNext
@@ -25,8 +24,8 @@
             var result = iterator.MoveNext();
 
             // Assert
-            IsFalse(result);
-            AreEqual(null, iterator.Current);
+            Assert.IsFalse(result);
+            Assert.AreEqual(null, iterator.Current);
         }
 
         [Test]
@@ -40,8 +39,8 @@
             var result = iterator.MoveNext();
 
             // Assert
-            AreEqual(10, iterator.Current.Value);
-            AreEqual(true, result);
+            Assert.AreEqual(10, iterator.Current.Value);
+            Assert.AreEqual(true, result);
         }
 
         [Test]
@@ -60,9 +59,9 @@
             var result = iterator.MoveNext();
 
             // Assert
-            AreEqual(true, result);
-            IsNotNull(iterator.Current);
-            AreEqual(20, iterator.Current.Value);
+            Assert.AreEqual(true, result);
+            Assert.IsNotNull(iterator.Current);
+            Assert.AreEqual(20, iterator.Current.Value);
         }
 
         [Test]
@@ -82,8 +81,8 @@
             var result = iterator.MoveNext();
 
             // Assert
-            AreEqual(false, result);
-            IsNull(iterator.Current);
+            Assert.AreEqual(false, result);
+            Assert.IsNull(iterator.Current);
         }
 
         [Test]
@@ -104,8 +103,8 @@
             var result = iterator.MoveNext();
 
             // Assert
-            IsNull(iterator.Current);
-            AreEqual(false, result);
+            Assert.IsNull(iterator.Current);
+            Assert.AreEqual(false, result);
         }
     }
 }

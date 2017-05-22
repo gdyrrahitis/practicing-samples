@@ -1,4 +1,4 @@
-﻿namespace Adapter.Tests.AdapterTests
+﻿namespace Patterns.Adapter.Tests.AdapterTests
 {
     using NUnit.Framework;
 

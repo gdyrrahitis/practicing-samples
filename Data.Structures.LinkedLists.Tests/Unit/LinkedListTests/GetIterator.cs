@@ -1,7 +1,6 @@
-﻿namespace LinkedLists.Tests.Unit.LinkedListTests
+﻿namespace Data.Structures.LinkedLists.Tests.Unit.LinkedListTests
 {
     using NUnit.Framework;
-    using static NUnit.Framework.Assert;
 
     [TestFixture]
     public class GetIterator
@@ -16,8 +15,8 @@
             var iterator = list.GetIterator();
 
             // Assert
-            IsNotNull(iterator);
-            AreEqual(false, iterator.MoveNext());
+            Assert.IsNotNull(iterator);
+            Assert.AreEqual(false, iterator.MoveNext());
         }
 
         [Test]
@@ -31,9 +30,9 @@
             var iterator = list.GetIterator();
 
             // Assert
-            IsNotNull(iterator);
-            AreEqual(true, iterator.MoveNext());
-            AreEqual(10, iterator.Current.Value);
+            Assert.IsNotNull(iterator);
+            Assert.AreEqual(true, iterator.MoveNext());
+            Assert.AreEqual(10, iterator.Current.Value);
         }
 
         [Test]
@@ -48,11 +47,11 @@
             var iterator = list.GetIterator();
 
             // Assert
-            IsNotNull(iterator);
-            AreEqual(true, iterator.MoveNext());
-            AreEqual(20, iterator.Current.Value);
-            AreEqual(true, iterator.MoveNext());
-            AreEqual(10, iterator.Current.Value);
+            Assert.IsNotNull(iterator);
+            Assert.AreEqual(true, iterator.MoveNext());
+            Assert.AreEqual(20, iterator.Current.Value);
+            Assert.AreEqual(true, iterator.MoveNext());
+            Assert.AreEqual(10, iterator.Current.Value);
         }
 
         [Test]
@@ -66,11 +65,11 @@
             var iterator = list.GetIterator();
 
             // Assert
-            IsNotNull(iterator);
-            AreEqual(true, iterator.MoveNext());
-            AreEqual(10, iterator.Current.Value);
-            AreEqual(false, iterator.MoveNext());
-            IsNull(iterator.Current);
+            Assert.IsNotNull(iterator);
+            Assert.AreEqual(true, iterator.MoveNext());
+            Assert.AreEqual(10, iterator.Current.Value);
+            Assert.AreEqual(false, iterator.MoveNext());
+            Assert.IsNull(iterator.Current);
         }
     }
 }

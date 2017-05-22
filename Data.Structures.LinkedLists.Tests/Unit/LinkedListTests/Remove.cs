@@ -1,7 +1,6 @@
-﻿namespace LinkedLists.Tests.Unit.LinkedListTests
+﻿namespace Data.Structures.LinkedLists.Tests.Unit.LinkedListTests
 {
     using NUnit.Framework;
-    using static NUnit.Framework.Assert;
 
     [TestFixture]
     public class Remove
@@ -21,8 +20,8 @@
             _list.Remove();
 
             // Assert
-            AreEqual(false, _list.HasAny());
-            IsNull(_list.First);
+            Assert.AreEqual(false, _list.HasAny());
+            Assert.IsNull(_list.First);
         }
 
         [Test]
@@ -35,8 +34,8 @@
             _list.Remove();
 
             // Assert
-            AreEqual(false, _list.HasAny());
-            IsNull(_list.First);
+            Assert.AreEqual(false, _list.HasAny());
+            Assert.IsNull(_list.First);
         }
 
         [Test]
@@ -50,9 +49,9 @@
             _list.Remove();
 
             // Assert
-            AreEqual(true, _list.HasAny());
-            AreEqual(10, _list.First.Value);
-            IsNull(_list.First.Next);
+            Assert.AreEqual(true, _list.HasAny());
+            Assert.AreEqual(10, _list.First.Value);
+            Assert.IsNull(_list.First.Next);
         }
     }
 }

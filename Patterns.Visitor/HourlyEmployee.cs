@@ -1,4 +1,4 @@
-﻿namespace Visitor
+﻿namespace Patterns.Visitor
 {
     public class HourlyEmployee: IEmployee
     {

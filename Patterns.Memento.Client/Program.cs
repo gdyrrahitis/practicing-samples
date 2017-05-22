@@ -1,7 +1,7 @@
-﻿namespace MementoConsoleApplication
+﻿namespace Patterns.Memento.Client
 {
     using System;
-    using Memento;
+    using Patterns.Memento;
 
     class Program
     {

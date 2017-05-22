@@ -1,4 +1,4 @@
-﻿namespace Bridge
+﻿namespace Patterns.Bridge
 {
     public abstract class AbstractSwitch
     {

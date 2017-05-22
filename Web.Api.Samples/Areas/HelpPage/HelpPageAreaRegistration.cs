@@ -1,8 +1,7 @@
-using System.Web.Http;
-using System.Web.Mvc;
-
-namespace WebApiToTestsOn.Areas.HelpPage
+namespace Web.Api.Samples.Areas.HelpPage
 {
+    using System.Web.Http;
+    using System.Web.Mvc;
     using App_Start;
 
     public class HelpPageAreaRegistration : AreaRegistration

@@ -1,7 +1,6 @@
-﻿namespace Decorator.Tests.RifleTests
+﻿namespace Patterns.Decorator.Tests.RifleTests
 {
     using NUnit.Framework;
-    using static NUnit.Framework.Assert;
 
     [TestFixture]
     public class Damage
@@ -16,7 +15,7 @@
             var result = rifle.Damage;
 
             // Assert
-            That(result, Is.EqualTo(70));
+            Assert.That(result, Is.EqualTo(70));
         }
     }
 }

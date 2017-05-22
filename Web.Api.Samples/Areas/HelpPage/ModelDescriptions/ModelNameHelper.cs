@@ -1,10 +1,10 @@
-using System;
-using System.Globalization;
-using System.Linq;
-using System.Reflection;
-
-namespace WebApiToTestsOn.Areas.HelpPage.ModelDescriptions
+namespace Web.Api.Samples.Areas.HelpPage.ModelDescriptions
 {
+    using System;
+    using System.Globalization;
+    using System.Linq;
+    using System.Reflection;
+
     internal static class ModelNameHelper
     {
         // Modify this to provide custom model name mapping.

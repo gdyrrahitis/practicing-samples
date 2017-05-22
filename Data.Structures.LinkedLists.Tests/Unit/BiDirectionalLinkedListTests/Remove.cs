@@ -1,7 +1,6 @@
-﻿namespace LinkedLists.Tests.Unit.BiDirectionalLinkedListTests
+﻿namespace Data.Structures.LinkedLists.Tests.Unit.BiDirectionalLinkedListTests
 {
     using NUnit.Framework;
-    using static NUnit.Framework.Assert;
 
     [TestFixture]
     public class Remove
@@ -21,8 +20,8 @@
             _list.Remove();
 
             // Assert
-            IsNull(_list.First);
-            IsNull(_list.Last);
+            Assert.IsNull(_list.First);
+            Assert.IsNull(_list.Last);
         }
 
         [Test]
@@ -35,8 +34,8 @@
             _list.Remove();
 
             // Assert
-            IsNull(_list.First);
-            IsNull(_list.Last);
+            Assert.IsNull(_list.First);
+            Assert.IsNull(_list.Last);
         }
 
         [Test]
@@ -50,8 +49,8 @@
             _list.Remove();
 
             // Assert
-            AreEqual(20, _list.First.Value);
-            AreEqual(20, _list.Last.Value);
+            Assert.AreEqual(20, _list.First.Value);
+            Assert.AreEqual(20, _list.Last.Value);
         }
     }
 }

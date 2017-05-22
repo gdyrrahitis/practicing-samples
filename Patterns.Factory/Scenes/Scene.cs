@@ -1,4 +1,4 @@
-﻿namespace Factory.Scenes
+﻿namespace Patterns.Factory.Scenes
 {
     public abstract class Scene
     {

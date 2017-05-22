@@ -1,7 +1,6 @@
-﻿namespace LinkedLists.Tests.Unit.LinkedListTests
+﻿namespace Data.Structures.LinkedLists.Tests.Unit.LinkedListTests
 {
     using NUnit.Framework;
-    using static NUnit.Framework.Assert;
 
     [TestFixture]
     public class Find
@@ -21,7 +20,7 @@
             var result = _list.Find(10);
 
             // Assert
-            IsNull(result);
+            Assert.IsNull(result);
         }
 
         [Test]
@@ -34,8 +33,8 @@
             var result = _list.Find(10);
 
             // Assert
-            IsNotNull(result);
-            AreEqual(10, result.Value);
+            Assert.IsNotNull(result);
+            Assert.AreEqual(10, result.Value);
         }
 
         [Test]
@@ -49,8 +48,8 @@
             var result = _list.Find(10);
 
             // Assert
-            IsNotNull(result);
-            AreEqual(10, result.Value);
+            Assert.IsNotNull(result);
+            Assert.AreEqual(10, result.Value);
         }
 
         [Test]
@@ -65,8 +64,8 @@
             var result = _list.Find(23);
 
             // Assert
-            IsNotNull(result);
-            AreEqual(23, result.Value);
+            Assert.IsNotNull(result);
+            Assert.AreEqual(23, result.Value);
         }
 
         [Test]
@@ -81,7 +80,7 @@
             var result = _list.Find(6);
 
             // Assert
-            IsNull(result);
+            Assert.IsNull(result);
         }
     }
 }

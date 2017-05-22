@@ -1,4 +1,4 @@
-﻿namespace Visitor
+﻿namespace Patterns.Visitor
 {
     public class CalculateRate: IEmployeeVisitor
     {

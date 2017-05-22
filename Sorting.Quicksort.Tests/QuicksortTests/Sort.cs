@@ -1,8 +1,6 @@
-﻿namespace Algorithm.Quicksort.Tests.QuicksortTests
+﻿namespace Sorting.Quicksort.Tests.QuicksortTests
 {
-    using System.Collections;
     using NUnit.Framework;
-    using static NUnit.Framework.CollectionAssert;
 
     [TestFixture]
     public class Sort
@@ -18,7 +16,7 @@
             quickSort.Sort();
 
             // Assert
-            AreEqual(new[] { 1 }, array);
+            CollectionAssert.AreEqual(new[] { 1 }, array);
         }
 
         [Test]
@@ -32,7 +30,7 @@
             quickSort.Sort();
 
             // Assert
-            AreEqual(new[] { 0, 1 }, array);
+            CollectionAssert.AreEqual(new[] { 0, 1 }, array);
         }
 
         [Test]
@@ -46,7 +44,7 @@
             quickSort.Sort();
 
             // Assert
-            AreEqual(new[] { 0, 1, 5 }, array);
+            CollectionAssert.AreEqual(new[] { 0, 1, 5 }, array);
         }
 
         [Test]
@@ -60,7 +58,7 @@
             quickSort.Sort();
 
             // Assert
-            AreEqual(new[] { -8, 0, 1, 5 }, array);
+            CollectionAssert.AreEqual(new[] { -8, 0, 1, 5 }, array);
         }
 
         [Test]
@@ -74,7 +72,7 @@
             quickSort.Sort();
 
             // Assert
-            AreEqual(new[] { -8, 0, 1, 5, 45 }, array);
+            CollectionAssert.AreEqual(new[] { -8, 0, 1, 5, 45 }, array);
         }
 
         [Test, TestCase(new [] { 0, 70, 6, 38, 38, 24, 56, 44, 26, 73, 77, 30, 45, 97, 65, 69 }, new [] { 0, 6, 24, 26, 30, 38, 38, 44, 45, 56, 65, 69, 70, 73, 77, 97 })]
@@ -86,7 +84,7 @@
             quickSort.Sort();
 
             // Assert
-            AreEqual(expected, array);
+            CollectionAssert.AreEqual(expected, array);
         }
     }
 }

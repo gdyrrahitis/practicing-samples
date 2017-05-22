@@ -1,7 +1,6 @@
-﻿namespace Decorator.Tests.RifleTests
+﻿namespace Patterns.Decorator.Tests.RifleTests
 {
     using NUnit.Framework;
-    using static NUnit.Framework.Assert;
 
     [TestFixture]
     public class Recoil
@@ -16,7 +15,7 @@
             var result = rifle.Recoil;
 
             // Assert
-            That(result, Is.EqualTo(48));
+            Assert.That(result, Is.EqualTo(48));
         }
     }
 }

@@ -1,8 +1,7 @@
-﻿namespace Stack.Tests.Unit.StackTests
+﻿namespace Data.Structures.Stack.Tests.Unit.StackTests
 {
     using System;
     using NUnit.Framework;
-    using static NUnit.Framework.Assert;
 
     [TestFixture]
     public class Push
@@ -18,7 +17,7 @@
             stack.Push(9);
 
             // Asserrt
-            AreEqual(2, stack.Size);
+            Assert.AreEqual(2, stack.Size);
             Throws<Exception>(() => stack.PushAndPeek(9), "Stack is full, cannot push.");
         }
 
@@ -35,8 +34,8 @@
             stack.Push(789);
 
             // Assert
-            AreEqual(4, stack.Size);
-            AreEqual(789, stack.Peek());
+            Assert.AreEqual(4, stack.Size);
+            Assert.AreEqual(789, stack.Peek());
         }
     }
 }

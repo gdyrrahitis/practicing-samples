@@ -1,7 +1,6 @@
-﻿namespace Bubblesort.Tests.Unit.BubblesortTests
+﻿namespace Sorting.Bubblesort.Tests.Unit.BubblesortTests
 {
     using NUnit.Framework;
-    using static NUnit.Framework.CollectionAssert;
 
     [TestFixture]
     public class Sort
@@ -18,7 +17,7 @@
             bubblesort.Sort();
 
             // Assert
-            IsOrdered(array);
+            CollectionAssert.IsOrdered(array);
         }
     }
 }

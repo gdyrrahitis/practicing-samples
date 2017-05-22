@@ -1,4 +1,4 @@
-﻿namespace Observer.Tests.PublisherTests
+﻿namespace Patterns.Observer.Tests.PublisherTests
 {
     using System.Collections.Generic;
     using Moq;

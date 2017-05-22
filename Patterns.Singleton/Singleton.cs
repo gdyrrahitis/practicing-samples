@@ -1,4 +1,4 @@
-﻿namespace Singleton
+﻿namespace Patterns.Singleton
 {
     public class Singleton
     {

@@ -1,7 +1,6 @@
-﻿namespace LinkedLists.Tests.Unit.LinkedListTests
+﻿namespace Data.Structures.LinkedLists.Tests.Unit.LinkedListTests
 {
     using NUnit.Framework;
-    using static NUnit.Framework.Assert;
 
     [TestFixture]
     public class First
@@ -16,7 +15,7 @@
             var result = list.First;
 
             // Assert
-            AreEqual(null, result);
+            Assert.AreEqual(null, result);
         }
     }
 }

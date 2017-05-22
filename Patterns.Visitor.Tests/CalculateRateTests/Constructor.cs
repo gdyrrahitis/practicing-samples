@@ -1,6 +1,5 @@
-﻿namespace Visitor.Tests.CalculateRateTests
+﻿namespace Patterns.Visitor.Tests.CalculateRateTests
 {
-    using Visitor;
     using NUnit.Framework;
 
     [TestFixture]

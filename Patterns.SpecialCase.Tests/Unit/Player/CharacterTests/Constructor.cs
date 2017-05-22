@@ -1,4 +1,4 @@
-﻿namespace SpecialCase.Tests.Unit.Player.CharacterTests
+﻿namespace Patterns.SpecialCase.Tests.Unit.Player.CharacterTests
 {
     using Moq;
     using NUnit.Framework;

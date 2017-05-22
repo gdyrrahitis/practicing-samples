@@ -1,4 +1,4 @@
-﻿namespace Adapter
+﻿namespace Patterns.Adapter
 {
     public class Adaptee
     {

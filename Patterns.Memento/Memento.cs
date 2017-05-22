@@ -1,4 +1,4 @@
-﻿namespace Memento
+﻿namespace Patterns.Memento
 {
     using System.Collections.Generic;
 

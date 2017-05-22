@@ -1,7 +1,6 @@
-﻿namespace Visitor.Tests.SalariedEmployeeTests
+﻿namespace Patterns.Visitor.Tests.SalariedEmployeeTests
 {
     using NUnit.Framework;
-    using static NUnit.Framework.Assert;
 
     [TestFixture]
     public class Constructor
@@ -13,7 +12,7 @@
             var result = new SalariedEmployee();
 
             // Assert
-            IsInstanceOf<IEmployee>(result);
+            Assert.IsInstanceOf<IEmployee>(result);
         }
     }
 }

@@ -1,9 +1,7 @@
-﻿namespace WebApiToTestsOn.Tests.Controllers.CustomValuesControllerTests
+﻿namespace Web.Api.Samples.Controllers.CustomValuesControllerTests
 {
     using System.Web.Http.Controllers;
     using NUnit.Framework;
-    using WebApiToTestsOn.Controllers;
-    using static NUnit.Framework.Assert;
 
     [TestFixture]
     public class Constructor
@@ -20,14 +18,14 @@
         public void InstanceIsDefined()
         {
             // Assert
-            IsNotNull(_controller);
+            Assert.IsNotNull(_controller);
         }
 
         [Test]
         public void IsOfTypeIHttpController()
         {
             // Assert
-            IsInstanceOf<IHttpController>(_controller);
+            Assert.IsInstanceOf<IHttpController>(_controller);
         }
     }
 }

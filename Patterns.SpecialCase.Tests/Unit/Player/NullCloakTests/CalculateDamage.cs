@@ -1,4 +1,4 @@
-﻿namespace SpecialCase.Tests.Unit.Player.NullCloakTests
+﻿namespace Patterns.SpecialCase.Tests.Unit.Player.NullCloakTests
 {
     using NUnit.Framework;
     using SpecialCase.Player;

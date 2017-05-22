@@ -1,7 +1,6 @@
-﻿namespace LinkedLists.Tests.Unit.LinkedListTests
+﻿namespace Data.Structures.LinkedLists.Tests.Unit.LinkedListTests
 {
     using NUnit.Framework;
-    using static NUnit.Framework.Assert;
 
     [TestFixture]
     public class HasAny
@@ -16,7 +15,7 @@
             var result = list.HasAny();
 
             // Assert
-            AreEqual(false, result);
+            Assert.AreEqual(false, result);
         }
 
         [Test]
@@ -30,7 +29,7 @@
             var result = list.HasAny();
 
             // Assert
-            AreEqual(true, result);
+            Assert.AreEqual(true, result);
         }
     }
 }

@@ -1,8 +1,7 @@
-﻿namespace Decorator.Tests.WeaponDecoratorTests
+﻿namespace Patterns.Decorator.Tests.WeaponDecoratorTests
 {
     using Moq;
     using NUnit.Framework;
-    using static NUnit.Framework.Assert;
 
     [TestFixture]
     public class Recoil
@@ -26,7 +25,7 @@
             var result = decorator.Recoil;
             
             // Assert
-            That(result, Is.EqualTo(77));
+            Assert.That(result, Is.EqualTo(77));
         }
     }
 }

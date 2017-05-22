@@ -1,4 +1,4 @@
-﻿namespace WebApiToTestsOn.Tests.RouteConstraints
+﻿namespace Web.Api.Samples.RouteConstraints
 {
     using System;
     using System.Collections.Generic;
@@ -6,7 +6,6 @@
     using System.Web.Http;
     using System.Web.Http.Routing;
     using NUnit.Framework;
-    using WebApiToTestsOn.RouteConstraints;
 
     [TestFixture]
     public class OptionalRegexParameterTests

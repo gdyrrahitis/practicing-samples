@@ -1,10 +1,10 @@
-﻿namespace WebApiToTestsOn
+﻿namespace Web.Api.Samples
 {
     using System.Web.Http;
     using System.Web.Mvc;
     using System.Web.Optimization;
     using System.Web.Routing;
-    using WebApiToTestsOn.MessageHandlers;
+    using MessageHandlers;
 
     public class WebApiApplication : System.Web.HttpApplication
     {

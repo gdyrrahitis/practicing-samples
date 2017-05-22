@@ -1,8 +1,7 @@
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-
-namespace WebApiToTestsOn.Areas.HelpPage.ModelDescriptions
+namespace Web.Api.Samples.Areas.HelpPage.ModelDescriptions
 {
+    using System.Collections.ObjectModel;
+
     public class ParameterDescription
     {
         public ParameterDescription()

@@ -1,4 +1,4 @@
-namespace WebApiToTestsOn.Areas.HelpPage.ModelDescriptions
+namespace Web.Api.Samples.Areas.HelpPage.ModelDescriptions
 {
     public class EnumValueDescription
     {

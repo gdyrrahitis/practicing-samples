@@ -1,6 +1,5 @@
-﻿namespace Visitor.Tests.CalculateRenumerationTests
+﻿namespace Patterns.Visitor.Tests.CalculateRenumerationTests
 {
-    using Visitor;
     using NUnit.Framework;
 
     [TestFixture]

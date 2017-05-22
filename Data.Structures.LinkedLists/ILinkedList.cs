@@ -1,4 +1,4 @@
-﻿namespace LinkedLists
+﻿namespace Data.Structures.LinkedLists
 {
     public interface ILinkedList
     {

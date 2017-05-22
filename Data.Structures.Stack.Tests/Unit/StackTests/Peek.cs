@@ -1,8 +1,7 @@
-﻿namespace Stack.Tests.Unit.StackTests
+﻿namespace Data.Structures.Stack.Tests.Unit.StackTests
 {
     using System;
     using NUnit.Framework;
-    using static NUnit.Framework.Assert;
 
     [TestFixture]
     public class Peek

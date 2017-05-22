@@ -1,4 +1,4 @@
-﻿namespace MergeSort
+﻿namespace Sorting.MergeSort
 {
     using System.Collections.Generic;
 

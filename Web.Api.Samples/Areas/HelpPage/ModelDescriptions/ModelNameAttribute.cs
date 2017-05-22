@@ -1,7 +1,7 @@
-using System;
-
-namespace WebApiToTestsOn.Areas.HelpPage.ModelDescriptions
+namespace Web.Api.Samples.Areas.HelpPage.ModelDescriptions
 {
+    using System;
+
     /// <summary>
     /// Use this attribute to change the name of the <see cref="ModelDescription"/> generated for a type.
     /// </summary>

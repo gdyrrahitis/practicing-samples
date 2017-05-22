@@ -1,7 +1,6 @@
-﻿namespace Decorator.Tests.RecoilPadDecoratorTests
+﻿namespace Patterns.Decorator.Tests.RecoilPadDecoratorTests
 {
     using NUnit.Framework;
-    using static NUnit.Framework.Assert;
 
     [TestFixture]
     public class Recoil
@@ -18,10 +17,10 @@
             var result = decorator.Recoil;
 
             // Assert
-            That(initialRecoilValue, Is.EqualTo(48));
-            That(result, Is.EqualTo(71));
-            That(decorator.Damage, Is.EqualTo(rifle.Damage));
-            That(decorator.Accuracy, Is.EqualTo(rifle.Accuracy));
+            Assert.That(initialRecoilValue, Is.EqualTo(48));
+            Assert.That(result, Is.EqualTo(71));
+            Assert.That(decorator.Damage, Is.EqualTo(rifle.Damage));
+            Assert.That(decorator.Accuracy, Is.EqualTo(rifle.Accuracy));
         }
     }
 }

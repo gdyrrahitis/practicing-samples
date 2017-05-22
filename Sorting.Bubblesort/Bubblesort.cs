@@ -1,4 +1,4 @@
-﻿namespace Bubblesort
+﻿namespace Sorting.Bubblesort
 {
     public class Bubblesort
     {

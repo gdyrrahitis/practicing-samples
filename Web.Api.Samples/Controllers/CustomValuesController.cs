@@ -1,4 +1,4 @@
-﻿namespace WebApiToTestsOn.Controllers
+﻿namespace Web.Api.Samples.Controllers
 {
     using System;
     using System.Collections.Generic;

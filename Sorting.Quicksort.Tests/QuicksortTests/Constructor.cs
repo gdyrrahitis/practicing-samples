@@ -1,8 +1,7 @@
-﻿namespace Algorithm.Quicksort.Tests.QuicksortTests
+﻿namespace Sorting.Quicksort.Tests.QuicksortTests
 {
     using System;
     using NUnit.Framework;
-    using static NUnit.Framework.Assert;
 
     [TestFixture]
     public class Constructor
@@ -18,7 +17,7 @@
         [Test]
         public void InstanceIsDefined()
         {
-            IsInstanceOf<Quicksort>(_quickSort);
+            Assert.IsInstanceOf<Quicksort>(_quickSort);
         }
 
         [Test]

@@ -1,4 +1,4 @@
-﻿namespace Algorithm.Shellsort
+﻿namespace Sorting.Shellsort
 {
     public class Shellsort
     {

@@ -1,4 +1,4 @@
-﻿namespace SpecialCase.Tests.Unit.Player.DiamondCloakTests
+﻿namespace Patterns.SpecialCase.Tests.Unit.Player.DiamondCloakTests
 {
     using NUnit.Framework;
     using SpecialCase.Player;

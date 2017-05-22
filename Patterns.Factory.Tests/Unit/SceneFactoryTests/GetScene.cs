@@ -1,8 +1,7 @@
-﻿namespace Factory.Tests.Unit.SceneFactoryTests
+﻿namespace Patterns.Factory.Tests.Unit.SceneFactoryTests
 {
     using NUnit.Framework;
     using Scenes;
-    using static NUnit.Framework.Assert;
 
     [TestFixture]
     public class GetScene
@@ -17,7 +16,7 @@
             var result = scene.Show();
 
             // Assert
-            AreEqual("Welcome", result);
+            Assert.AreEqual("Welcome", result);
         }
 
         [Test]
@@ -30,7 +29,7 @@
             var result = scene.Show();
 
             // Assert
-            AreEqual("End", result);
+            Assert.AreEqual("End", result);
         }
 
         [Test]
@@ -44,7 +43,7 @@
             var result = welcome.Show();
 
             // Assert
-            AreEqual("Welcome", result);
+            Assert.AreEqual("Welcome", result);
         }
 
 
@@ -59,7 +58,7 @@
             var result = welcome.Show();
 
             // Assert
-            AreEqual("End", result);
+            Assert.AreEqual("End", result);
         }
     }
 }

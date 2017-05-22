@@ -1,4 +1,4 @@
-﻿namespace Factory
+﻿namespace Patterns.Factory
 {
     public enum SceneEnum
     {

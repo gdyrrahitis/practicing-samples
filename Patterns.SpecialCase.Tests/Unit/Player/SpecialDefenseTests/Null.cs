@@ -1,4 +1,4 @@
-﻿namespace SpecialCase.Tests.Unit.Player.SpecialDefenseTests
+﻿namespace Patterns.SpecialCase.Tests.Unit.Player.SpecialDefenseTests
 {
     using NUnit.Framework;
     using SpecialCase.Player;

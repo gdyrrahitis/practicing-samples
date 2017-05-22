@@ -1,8 +1,7 @@
-﻿namespace Decorator.Tests.WeaponDecoratorTests
+﻿namespace Patterns.Decorator.Tests.WeaponDecoratorTests
 {
     using Moq;
     using NUnit.Framework;
-    using static NUnit.Framework.Assert;
 
     [TestFixture]
     public class Accuracy
@@ -26,7 +25,7 @@
             var result = decorator.Accuracy;
 
             // Assert
-            That(result, Is.EqualTo(99));
+            Assert.That(result, Is.EqualTo(99));
         }
     }
 }

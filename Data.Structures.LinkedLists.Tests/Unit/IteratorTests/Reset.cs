@@ -1,8 +1,7 @@
-﻿namespace LinkedLists.Tests.Unit.IteratorTests
+﻿namespace Data.Structures.LinkedLists.Tests.Unit.IteratorTests
 {
     using Moq;
     using NUnit.Framework;
-    using static NUnit.Framework.Assert;
 
     [TestFixture]
     public class Reset
@@ -26,7 +25,7 @@
             iterator.Reset();
 
             // Assert
-            AreEqual(null, iterator.Current);
+            Assert.AreEqual(null, iterator.Current);
         }
 
         [Test]
@@ -41,7 +40,7 @@
             iterator.Reset();
 
             // Assert
-            AreEqual(10, iterator.Current.Value);
+            Assert.AreEqual(10, iterator.Current.Value);
         }
 
         [Test]
@@ -60,7 +59,7 @@
             iterator.Reset();
 
             // Assert
-            AreEqual(10, iterator.Current.Value);
+            Assert.AreEqual(10, iterator.Current.Value);
         }
 
         private static void MoveIteratorToSecondNode(IIterator iterator)

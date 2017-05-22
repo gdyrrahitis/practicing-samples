@@ -1,4 +1,4 @@
-﻿namespace Singleton.Tests.Unit.SingletonTests
+﻿namespace Patterns.Singleton.Tests.Unit.SingletonTests
 {
     using NUnit.Framework;
 

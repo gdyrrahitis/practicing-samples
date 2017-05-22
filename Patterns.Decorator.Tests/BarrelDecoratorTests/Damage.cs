@@ -1,7 +1,6 @@
-﻿namespace Decorator.Tests.BarrelDecoratorTests
+﻿namespace Patterns.Decorator.Tests.BarrelDecoratorTests
 {
     using NUnit.Framework;
-    using static NUnit.Framework.Assert;
 
     [TestFixture]
     public class Damage
@@ -18,10 +17,10 @@
             var result = decorator.Damage;
 
             // Assert
-            That(initialDamageValue, Is.EqualTo(70));
-            That(result, Is.EqualTo(89));
-            That(decorator.Recoil, Is.EqualTo(rifle.Recoil));
-            That(decorator.Accuracy, Is.EqualTo(rifle.Accuracy));
+            Assert.That(initialDamageValue, Is.EqualTo(70));
+            Assert.That(result, Is.EqualTo(89));
+            Assert.That(decorator.Recoil, Is.EqualTo(rifle.Recoil));
+            Assert.That(decorator.Accuracy, Is.EqualTo(rifle.Accuracy));
         }
     }
 }

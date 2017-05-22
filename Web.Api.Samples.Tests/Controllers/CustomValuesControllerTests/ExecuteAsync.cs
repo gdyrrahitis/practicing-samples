@@ -1,4 +1,4 @@
-﻿namespace WebApiToTestsOn.Tests.Controllers.CustomValuesControllerTests
+﻿namespace Web.Api.Samples.Controllers.CustomValuesControllerTests
 {
     using System.Collections.Generic;
     using System.Linq;
@@ -11,8 +11,6 @@
     using System.Web.Http.Hosting;
     using Newtonsoft.Json;
     using NUnit.Framework;
-    using WebApiToTestsOn.Controllers;
-    using static NUnit.Framework.Assert;
 
     [TestFixture]
     public class ExecuteAsync
@@ -40,10 +38,10 @@
             var content = JsonConvert.DeserializeObject<List<string>>(await result.Content.ReadAsStringAsync());
 
             // Assert
-            IsNotNull(result);
-            AreEqual(HttpStatusCode.OK, result.StatusCode);
-            IsNotNull(content);
-            AreEqual(_expected.Count, content.Count);
+            Assert.IsNotNull(result);
+            Assert.AreEqual(HttpStatusCode.OK, result.StatusCode);
+            Assert.IsNotNull(content);
+            Assert.AreEqual(_expected.Count, content.Count);
         }
 
         private HttpControllerContext SetupHttpConfigurationRequestAndContextWithHeaderConfigurable(string headerValue)
@@ -96,9 +94,9 @@
             var result = await _controller.ExecuteAsync(controllerContext, CancellationToken.None);
 
             // Assert
-            IsNotNull(result);
-            AreEqual(HttpStatusCode.BadRequest, result.StatusCode);
-            IsNull(result.Content);
+            Assert.IsNotNull(result);
+            Assert.AreEqual(HttpStatusCode.BadRequest, result.StatusCode);
+            Assert.IsNull(result.Content);
         }
 
         [Test]
@@ -113,9 +111,9 @@
             var result = await _controller.ExecuteAsync(controllerContext, CancellationToken.None);
 
             // Assert
-            IsNotNull(result);
-            AreEqual(HttpStatusCode.BadRequest, result.StatusCode);
-            IsNull(result.Content);
+            Assert.IsNotNull(result);
+            Assert.AreEqual(HttpStatusCode.BadRequest, result.StatusCode);
+            Assert.IsNull(result.Content);
         }
 
         [Test]
@@ -132,9 +130,9 @@
             var result = await _controller.ExecuteAsync(controllerContext, CancellationToken.None);
 
             // Assert
-            IsNotNull(result);
-            AreEqual(HttpStatusCode.InternalServerError, result.StatusCode);
-            IsNotNull(result.Content);
+            Assert.IsNotNull(result);
+            Assert.AreEqual(HttpStatusCode.InternalServerError, result.StatusCode);
+            Assert.IsNotNull(result.Content);
         }
 
         [Test]
@@ -158,18 +156,18 @@
             var result = await _controller.ExecuteAsync(controllerContext, CancellationToken.None);
 
             // Assert
-            IsNotNull(result);
+            Assert.IsNotNull(result);
             if (allowed)
             {
                 var content = JsonConvert.DeserializeObject<List<string>>(await result.Content.ReadAsStringAsync());
-                AreEqual(HttpStatusCode.OK, result.StatusCode);
-                IsNotNull(content);
-                AreEqual(_expected.Count, content.Count);
+                Assert.AreEqual(HttpStatusCode.OK, result.StatusCode);
+                Assert.IsNotNull(content);
+                Assert.AreEqual(_expected.Count, content.Count);
             }
             else
             {
-                AreEqual(HttpStatusCode.MethodNotAllowed, result.StatusCode);
-                IsNull(result.Content);
+                Assert.AreEqual(HttpStatusCode.MethodNotAllowed, result.StatusCode);
+                Assert.IsNull(result.Content);
             }
         }
 

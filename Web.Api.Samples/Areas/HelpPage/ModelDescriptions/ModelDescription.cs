@@ -1,7 +1,7 @@
-using System;
-
-namespace WebApiToTestsOn.Areas.HelpPage.ModelDescriptions
+namespace Web.Api.Samples.Areas.HelpPage.ModelDescriptions
 {
+    using System;
+
     /// <summary>
     /// Describes a type model.
     /// </summary>

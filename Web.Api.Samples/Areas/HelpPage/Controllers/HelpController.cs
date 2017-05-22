@@ -1,11 +1,11 @@
-using System;
-using System.Web.Http;
-using System.Web.Mvc;
-using WebApiToTestsOn.Areas.HelpPage.ModelDescriptions;
-using WebApiToTestsOn.Areas.HelpPage.Models;
-
-namespace WebApiToTestsOn.Areas.HelpPage.Controllers
+namespace Web.Api.Samples.Areas.HelpPage.Controllers
 {
+    using System;
+    using System.Web.Http;
+    using System.Web.Mvc;
+    using ModelDescriptions;
+    using Models;
+
     /// <summary>
     /// The controller that will handle requests for the help page.
     /// </summary>

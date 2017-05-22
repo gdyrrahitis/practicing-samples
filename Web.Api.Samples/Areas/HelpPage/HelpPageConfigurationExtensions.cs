@@ -1,21 +1,20 @@
-using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Diagnostics;
-using System.Diagnostics.CodeAnalysis;
-using System.Globalization;
-using System.Linq;
-using System.Net.Http;
-using System.Net.Http.Headers;
-using System.Web.Http;
-using System.Web.Http.Controllers;
-using System.Web.Http.Description;
-using WebApiToTestsOn.Areas.HelpPage.ModelDescriptions;
-using WebApiToTestsOn.Areas.HelpPage.Models;
-
-namespace WebApiToTestsOn.Areas.HelpPage
+namespace Web.Api.Samples.Areas.HelpPage
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Collections.ObjectModel;
+    using System.ComponentModel;
+    using System.Diagnostics;
+    using System.Diagnostics.CodeAnalysis;
+    using System.Globalization;
+    using System.Linq;
+    using System.Net.Http;
+    using System.Net.Http.Headers;
+    using System.Web.Http;
+    using System.Web.Http.Controllers;
+    using System.Web.Http.Description;
+    using ModelDescriptions;
+    using Models;
     using SampleGeneration;
 
     public static class HelpPageConfigurationExtensions

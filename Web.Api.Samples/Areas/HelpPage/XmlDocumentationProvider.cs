@@ -1,14 +1,14 @@
-using System;
-using System.Globalization;
-using System.Linq;
-using System.Reflection;
-using System.Web.Http.Controllers;
-using System.Web.Http.Description;
-using System.Xml.XPath;
-using WebApiToTestsOn.Areas.HelpPage.ModelDescriptions;
-
-namespace WebApiToTestsOn.Areas.HelpPage
+namespace Web.Api.Samples.Areas.HelpPage
 {
+    using System;
+    using System.Globalization;
+    using System.Linq;
+    using System.Reflection;
+    using System.Web.Http.Controllers;
+    using System.Web.Http.Description;
+    using System.Xml.XPath;
+    using ModelDescriptions;
+
     /// <summary>
     /// A custom <see cref="IDocumentationProvider"/> that reads the API documentation from an XML documentation file.
     /// </summary>

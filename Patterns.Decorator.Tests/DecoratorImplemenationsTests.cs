@@ -1,7 +1,6 @@
-﻿namespace Decorator.Tests
+﻿namespace Patterns.Decorator.Tests
 {
     using NUnit.Framework;
-    using static NUnit.Framework.Assert;
 
     [TestFixture]
     public class DecoratorImplemenationsTests
@@ -18,9 +17,9 @@
             var accuracy = rifle.Accuracy;
 
             // Assert
-            That(damage, Is.EqualTo(70));
-            That(accuracy, Is.EqualTo(65));
-            That(recoil, Is.EqualTo(48));
+            Assert.That(damage, Is.EqualTo(70));
+            Assert.That(accuracy, Is.EqualTo(65));
+            Assert.That(recoil, Is.EqualTo(48));
         }
 
         [Test]
@@ -36,9 +35,9 @@
             var accuracy = rifle.Accuracy;
 
             // Assert
-            That(damage, Is.EqualTo(70));
-            That(accuracy, Is.EqualTo(65));
-            That(recoil, Is.EqualTo(71));
+            Assert.That(damage, Is.EqualTo(70));
+            Assert.That(accuracy, Is.EqualTo(65));
+            Assert.That(recoil, Is.EqualTo(71));
         }
 
         [Test]
@@ -55,9 +54,9 @@
             var accuracy = rifle.Accuracy;
 
             // Assert
-            That(damage, Is.EqualTo(70));
-            That(accuracy, Is.EqualTo(90));
-            That(recoil, Is.EqualTo(71));
+            Assert.That(damage, Is.EqualTo(70));
+            Assert.That(accuracy, Is.EqualTo(90));
+            Assert.That(recoil, Is.EqualTo(71));
         }
 
         [Test]
@@ -75,9 +74,9 @@
             var accuracy = rifle.Accuracy;
 
             // Assert
-            That(damage, Is.EqualTo(89));
-            That(accuracy, Is.EqualTo(90));
-            That(recoil, Is.EqualTo(71));
+            Assert.That(damage, Is.EqualTo(89));
+            Assert.That(accuracy, Is.EqualTo(90));
+            Assert.That(recoil, Is.EqualTo(71));
         }
     }
 }

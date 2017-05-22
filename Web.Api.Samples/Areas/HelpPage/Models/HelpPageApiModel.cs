@@ -1,11 +1,11 @@
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Net.Http.Headers;
-using System.Web.Http.Description;
-using WebApiToTestsOn.Areas.HelpPage.ModelDescriptions;
-
-namespace WebApiToTestsOn.Areas.HelpPage.Models
+namespace Web.Api.Samples.Areas.HelpPage.Models
 {
+    using System.Collections.Generic;
+    using System.Collections.ObjectModel;
+    using System.Net.Http.Headers;
+    using System.Web.Http.Description;
+    using ModelDescriptions;
+
     /// <summary>
     /// The model that represents an API displayed on the help page.
     /// </summary>

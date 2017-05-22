@@ -1,7 +1,6 @@
-﻿namespace LinkedLists.Tests.Unit.BiDirectionalLinkedListTests
+﻿namespace Data.Structures.LinkedLists.Tests.Unit.BiDirectionalLinkedListTests
 {
     using NUnit.Framework;
-    using static NUnit.Framework.Assert;
 
     [TestFixture]
     public class Append
@@ -21,8 +20,8 @@
             _list.Append(20);
 
             // Assert
-            AreEqual(20, _list.First.Value);
-            AreEqual(20, _list.Last.Value);
+            Assert.AreEqual(20, _list.First.Value);
+            Assert.AreEqual(20, _list.Last.Value);
         }
 
         [Test]
@@ -36,14 +35,14 @@
             var iterator = _list.GetIterator();
 
             // Assert
-            AreEqual(10, _list.First.Value);
-            AreEqual(20, _list.Last.Value);
-            AreEqual(true, iterator.MoveNext());
-            AreEqual(10, iterator.Current.Value);
-            AreEqual(true, iterator.MoveNext());
-            AreEqual(20, iterator.Current.Value);
-            AreEqual(false, iterator.MoveNext());
-            AreEqual(null, iterator.Current);
+            Assert.AreEqual(10, _list.First.Value);
+            Assert.AreEqual(20, _list.Last.Value);
+            Assert.AreEqual(true, iterator.MoveNext());
+            Assert.AreEqual(10, iterator.Current.Value);
+            Assert.AreEqual(true, iterator.MoveNext());
+            Assert.AreEqual(20, iterator.Current.Value);
+            Assert.AreEqual(false, iterator.MoveNext());
+            Assert.AreEqual(null, iterator.Current);
         }
 
         [Test]
@@ -58,16 +57,16 @@
             var iterator = _list.GetIterator();
 
             // Assert
-            AreEqual(10, _list.First.Value);
-            AreEqual(20, _list.Last.Value);
-            AreEqual(true, iterator.MoveNext());
-            AreEqual(10, iterator.Current.Value);
-            AreEqual(true, iterator.MoveNext());
-            AreEqual(16, iterator.Current.Value);
-            AreEqual(true, iterator.MoveNext());
-            AreEqual(20, iterator.Current.Value);
-            AreEqual(false, iterator.MoveNext());
-            AreEqual(null, iterator.Current);
+            Assert.AreEqual(10, _list.First.Value);
+            Assert.AreEqual(20, _list.Last.Value);
+            Assert.AreEqual(true, iterator.MoveNext());
+            Assert.AreEqual(10, iterator.Current.Value);
+            Assert.AreEqual(true, iterator.MoveNext());
+            Assert.AreEqual(16, iterator.Current.Value);
+            Assert.AreEqual(true, iterator.MoveNext());
+            Assert.AreEqual(20, iterator.Current.Value);
+            Assert.AreEqual(false, iterator.MoveNext());
+            Assert.AreEqual(null, iterator.Current);
         }
     }
 }

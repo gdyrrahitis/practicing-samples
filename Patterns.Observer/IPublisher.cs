@@ -1,4 +1,4 @@
-﻿namespace Observer
+﻿namespace Patterns.Observer
 {
     public interface IPublisher
     {

@@ -1,7 +1,6 @@
-﻿namespace Stack.Tests.Unit.StackTests
+﻿namespace Data.Structures.Stack.Tests.Unit.StackTests
 {
     using NUnit.Framework;
-    using static NUnit.Framework.Assert;
 
     [TestFixture]
     public class Constructor
@@ -13,7 +12,7 @@
             var stack = new Stack();
 
             // Act | Assert
-            IsInstanceOf<Stack>(stack);
+            Assert.IsInstanceOf<Stack>(stack);
         }
 
         [Test]
@@ -23,7 +22,7 @@
             var stack = new Stack(10);
 
             // Act | Assert
-            AreEqual(10, stack.Length);
+            Assert.AreEqual(10, stack.Length);
         }
     }
 }

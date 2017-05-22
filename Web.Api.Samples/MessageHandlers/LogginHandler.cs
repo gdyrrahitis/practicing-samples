@@ -1,4 +1,4 @@
-﻿namespace WebApiToTestsOn.MessageHandlers
+﻿namespace Web.Api.Samples.MessageHandlers
 {
     using System.Diagnostics;
     using System.Net.Http;

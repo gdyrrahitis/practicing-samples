@@ -1,4 +1,4 @@
-﻿namespace Decorator
+﻿namespace Patterns.Decorator
 {
     public interface IWeapon
     {

@@ -1,7 +1,6 @@
-﻿namespace Stack.Tests.Unit.StackTests
+﻿namespace Data.Structures.Stack.Tests.Unit.StackTests
 {
     using NUnit.Framework;
-    using static NUnit.Framework.Assert;
 
     [TestFixture]
     public class Pop
@@ -20,8 +19,8 @@
             var item = stack.Pop();
 
             // Assert
-            AreEqual(78, item);
-            AreEqual(3, stack.Size);
+            Assert.AreEqual(78, item);
+            Assert.AreEqual(3, stack.Size);
         }
     }
 }

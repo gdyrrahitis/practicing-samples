@@ -1,7 +1,6 @@
-﻿namespace Algorithm.Shellsort.Tests.Unit.ShellsortTests
+﻿namespace Sorting.Shellsort.Tests.Unit.ShellsortTests
 {
     using NUnit.Framework;
-    using static NUnit.Framework.Assert;
 
     [TestFixture]
     public class KnuthSequence
@@ -27,7 +26,7 @@
             var result = _shellSort.KnuthSequence(h);
 
             // Assert
-            AreEqual(expected, result);
+            Assert.AreEqual(expected, result);
         }
     }
 }

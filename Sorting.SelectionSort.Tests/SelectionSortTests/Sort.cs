@@ -1,7 +1,6 @@
-﻿namespace Algorithm.SelectionSort.Tests.SelectionSortTests
+﻿namespace Sorting.SelectionSort.Tests.SelectionSortTests
 {
     using NUnit.Framework;
-    using static NUnit.Framework.Assert;
 
     [TestFixture]
     public class Sort
@@ -17,7 +16,7 @@
             selectionSort.Sort();
 
             // Assert
-            AreEqual(new[] { 0 }, array);
+            Assert.AreEqual(new[] { 0 }, array);
         }
 
         [Test]
@@ -31,7 +30,7 @@
             selectionSort.Sort();
 
             // Assert
-            AreEqual(new[] { -8, 0 }, array);
+            Assert.AreEqual(new[] { -8, 0 }, array);
         }
 
         [Test]
@@ -45,7 +44,7 @@
             selectionSort.Sort();
 
             // Assert
-            AreEqual(new[] { -8, 0, 5 }, array);
+            Assert.AreEqual(new[] { -8, 0, 5 }, array);
         }
 
         [Test]
@@ -59,7 +58,7 @@
             selectionSort.Sort();
 
             // Assert
-            AreEqual(new[] { -8, 0, 1, 5 }, array);
+            Assert.AreEqual(new[] { -8, 0, 1, 5 }, array);
         }
 
         [Test]
@@ -73,7 +72,7 @@
             selectionSort.Sort();
 
             // Assert
-            AreEqual(new[] { 0, 11, 22, 33, 44, 55, 66, 77, 88, 99 }, array);
+            Assert.AreEqual(new[] { 0, 11, 22, 33, 44, 55, 66, 77, 88, 99 }, array);
         }
     }
 }

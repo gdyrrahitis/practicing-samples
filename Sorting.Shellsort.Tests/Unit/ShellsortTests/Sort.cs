@@ -1,7 +1,6 @@
-﻿namespace Algorithm.Shellsort.Tests.Unit.ShellsortTests
+﻿namespace Sorting.Shellsort.Tests.Unit.ShellsortTests
 {
     using NUnit.Framework;
-    using static NUnit.Framework.CollectionAssert;
 
     [TestFixture]
     public class Sort
@@ -16,7 +15,7 @@
             shellSort.Sort();
 
             // Assert
-            IsOrdered(array);
+            CollectionAssert.IsOrdered(array);
         }
 
         [TestCase(new[] { 10, 5 })]
@@ -29,7 +28,7 @@
             shellSort.Sort();
 
             // Assert
-            IsOrdered(array);
+            CollectionAssert.IsOrdered(array);
         }
 
         [TestCase(new[] { 10, 5, 6 })]
@@ -42,7 +41,7 @@
             shellSort.Sort();
 
             // Assert
-            IsOrdered(array);
+            CollectionAssert.IsOrdered(array);
         }
 
         [TestCase(new[] { 10, 5, 9, 77, 0, -8, 1, 10, 6 })]
@@ -55,7 +54,7 @@
             shellSort.Sort();
 
             // Assert
-            IsOrdered(array);
+            CollectionAssert.IsOrdered(array);
         }
     }
 }

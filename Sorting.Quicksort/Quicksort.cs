@@ -1,4 +1,4 @@
-﻿namespace Algorithm.Quicksort
+﻿namespace Sorting.Quicksort
 {
     using System;
 

@@ -1,7 +1,6 @@
-﻿namespace LinkedLists.Tests.Unit.LinkTests
+﻿namespace Data.Structures.LinkedLists.Tests.Unit.LinkTests
 {
     using NUnit.Framework;
-    using static NUnit.Framework.Assert;
 
     [TestFixture]
     public class Constructor
@@ -13,7 +12,7 @@
             var result = new Link(10);
 
             // Assert
-            IsNotNull(result);
+            Assert.IsNotNull(result);
         }
 
         [Test]
@@ -23,7 +22,7 @@
             var link = new Link(10);
 
             // Assert
-            IsNull(link.Next);
+            Assert.IsNull(link.Next);
         }
 
         [Test]
@@ -36,7 +35,7 @@
             link.Next = new Link(15);
 
             // Assert
-            IsNotNull(link.Next);
+            Assert.IsNotNull(link.Next);
         }
 
         [Test]
@@ -49,7 +48,7 @@
             link.Next = null;
 
             // Assert
-            IsNull(link.Next);
+            Assert.IsNull(link.Next);
         }
 
         [Test]
@@ -62,7 +61,7 @@
             var link = new Link(value);
 
             // Assert
-            AreEqual(value, link.Value);
+            Assert.AreEqual(value, link.Value);
         }
     }
 }

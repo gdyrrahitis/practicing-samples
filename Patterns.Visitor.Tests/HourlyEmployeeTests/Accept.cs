@@ -1,8 +1,6 @@
-﻿namespace Visitor.Tests.HourlyEmployeeTests
+﻿namespace Patterns.Visitor.Tests.HourlyEmployeeTests
 {
-    using Visitor;
     using NUnit.Framework;
-    using static NUnit.Framework.Assert;
 
     [TestFixture]
     public class Accept
@@ -18,7 +16,7 @@
             var result = salariedEmployee.Accept(visitor);
 
             // Assert
-            AreEqual("renumeration", result);
+            Assert.AreEqual("renumeration", result);
         }
 
         [Test]
@@ -32,7 +30,7 @@
             var result = salariedEmployee.Accept(visitor);
 
             // Assert
-            AreEqual("rate", result);
+            Assert.AreEqual("rate", result);
         }
     }
 }

@@ -1,7 +1,6 @@
-﻿namespace LinkedLists.Tests.Unit.IteratorTests
+﻿namespace Data.Structures.LinkedLists.Tests.Unit.IteratorTests
 {
     using NUnit.Framework;
-    using static NUnit.Framework.Assert;
 
     [TestFixture]
     public class Current

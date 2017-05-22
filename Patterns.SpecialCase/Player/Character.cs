@@ -1,4 +1,4 @@
-﻿namespace SpecialCase.Player
+﻿namespace Patterns.SpecialCase.Player
 {
     public class Character
     {
