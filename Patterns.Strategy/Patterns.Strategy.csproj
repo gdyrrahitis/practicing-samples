@@ -40,15 +40,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PartialTypeNameRoleHint\InternalServerErrorResponder.cs" />
+    <Compile Include="PartialTypeNameRoleHint\IResponder.cs" />
+    <Compile Include="PartialTypeNameRoleHint\NotFoundResponder.cs" />
+    <Compile Include="PartialTypeNameRoleHint\OkResponder.cs" />
+    <Compile Include="PartialTypeNameRoleHint\ResponderSelector.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
     <None Include="README.md" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="PartialTypeNameRoleHint\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
