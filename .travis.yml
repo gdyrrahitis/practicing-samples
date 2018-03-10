@@ -25,4 +25,4 @@ script:
   - mono ./packages/NUnit.ConsoleRunner.*/tools/nunit3-console.exe ./Sorting.SelectionSort.Tests/bin/Release/Sorting.SelectionSort.Tests.dll
   - mono ./packages/NUnit.ConsoleRunner.*/tools/nunit3-console.exe ./Sorting.Shellsort.Tests/bin/Release/Sorting.Shellsort.Tests.dll
   - mono ./packages/NUnit.ConsoleRunner.*/tools/nunit3-console.exe ./Web.Api.Samples.Tests/bin/Release/Web.Api.Samples.Tests.dll
-  - mono ./packages/xunit.runner.console.*/tools/net452/xunit-console.exe ./Patterns.Builder.Tests/bin/Release/Patterns.Builder.Tests.dll
+  - mono ./packages/xunit.runner.console.*/tools/net452/xunit.console.exe ./Patterns.Builder.Tests/bin/Release/Patterns.Builder.Tests.dll
