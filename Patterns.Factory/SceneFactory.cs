@@ -3,7 +3,7 @@
     using System;
     using Scenes;
 
-    public class SceneFactory
+    public class SceneFactory: ISceneFactory
     {
         public Scene GetScene(SceneEnum welcome)
         {

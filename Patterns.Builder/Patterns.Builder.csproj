@@ -4,12 +4,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0B1B2132-1300-4EDA-9982-F0C76E04E1C9}</ProjectGuid>
+    <ProjectGuid>{B2C0F510-7AA5-4BA3-A530-7183BE2CF449}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Patterns.Factory</RootNamespace>
-    <AssemblyName>Patterns.Factory</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <RootNamespace>Patterns.Builder</RootNamespace>
+    <AssemblyName>Patterns.Builder</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -40,18 +40,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ISceneFactory.cs" />
-    <Compile Include="Scenes\EndScene.cs" />
+    <Compile Include="Cyborgs\ArmoredPart.cs" />
+    <Compile Include="Cyborgs\Arms.cs" />
+    <Compile Include="Cyborgs\Deadly\ArmoredTorso.cs" />
+    <Compile Include="Cyborgs\Deadly\FlameThrower.cs" />
+    <Compile Include="Cyborgs\Deadly\TerminatorCyborg.cs" />
+    <Compile Include="Cyborgs\FriendlyCyborg.cs" />
+    <Compile Include="Cyborgs\Head.cs" />
+    <Compile Include="Cyborgs\Legs.cs" />
+    <Compile Include="Cyborgs\Torso.cs" />
+    <Compile Include="Cyborgs\Type.cs" />
+    <Compile Include="Cyborgs\WeaponPart.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Scenes\Scene.cs" />
-    <Compile Include="SceneEnum.cs" />
-    <Compile Include="SceneFactory.cs" />
-    <Compile Include="Scenes\WelcomeScene.cs" />
+    <Compile Include="Cyborgs\CyborgBuilder.cs" />
+    <Compile Include="Cyborgs\ICyborgBuilder.cs" />
+    <Compile Include="Cyborgs\Part.cs" />
+    <Compile Include="Cyborgs\Cyborg.cs" />
+    <Compile Include="Skynet.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
-    <None Include="README.md" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
