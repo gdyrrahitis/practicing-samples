@@ -3,7 +3,7 @@
 This pattern belongs to Structural design patterns family.
 
 **Definition**
->Provide a way to access the elements of an aggregate object sequentially without exposing its underlying representation.
+Provide a way to access the elements of an aggregate object sequentially without exposing its underlying representation.
 
 ### Sample
 In this sample you will find two implementations of this particular pattern.
