@@ -8,7 +8,7 @@ A queue works like a real life queue, where people are waiting in line, like the
 ## Applicability
 Queues are a programming tool like stacks. They are used in describing real life situations like the queue of people waiting to get board on a plan or network packets that are waiting in a queue to get processed and ultimately transmitted over the internet.
 
-Another example would be a printer's queuem in which print jobs are waiting for the printer to process them.
+Another example would be a printer's queue in which print jobs are waiting for the printer to process them.
 
 ## Collaborators
 ### Queue
