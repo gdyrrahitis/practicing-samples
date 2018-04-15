@@ -27,4 +27,5 @@ script:
   - mono ./packages/NUnit.ConsoleRunner.*/tools/nunit3-console.exe ./Web.Api.Samples.Tests/bin/Release/Web.Api.Samples.Tests.dll
   - mono ./packages/xunit.runner.console.*/tools/net452/xunit.console.exe ./Patterns.Builder.Tests/bin/Release/Patterns.Builder.Tests.dll
   - mono ./packages/xunit.runner.console.*/tools/net452/xunit.console.exe ./Patterns.AbstractFactory.Tests/bin/Release/Patterns.AbstractFactory.Tests.dll
-  - mono ./packages/NUnit.ConsoleRunner.*/tools/nunit3-console.exe ./Data.Structures.Queue.Tests/bin/Release/Data.Structures.Queue.Tests.dll
+- mono ./packages/NUnit.ConsoleRunner.*/tools/nunit3-console.exe ./Data.Structures.Queue.Tests/bin/Release/Data.Structures.Queue.Tests.dll
+- mono ./packages/NUnit.ConsoleRunner.*/tools/nunit3-console.exe ./Algorithm.Stack.Implementations.Tests/bin/Release/Algorithm.Stack.Implementations.Tests.dll
